@@ -1,0 +1,8968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Assignment 1 marks</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+    <style>
+        * {
+            padding-top: 10px;
+            padding-left: 25px;
+            /*background-color: #1c1c1c;*/
+        }
+        pre {
+            background-color: #363636;
+            color: #c7c7c7;
+            border-radius: 10px;
+        }
+        pre span {
+            color: #f0960e;
+        }
+        table td, table td * {
+            vertical-align: top;
+            horizontal-align: left;
+            padding-right: 40px;
+        }
+        #correct {
+            font-size: 15px;
+            color: green;
+        }
+        #incorrect {
+            font-size: 15px;
+            color:  red;
+        }
+        
+    </style>
+
+</head>
+<body>
+
+<h1 class="display-4">Assignment 1 (version Cheetah)</h1>
+<h2>Student: Firas A</h2><h3>Total mark: 86/100</h3><div class="d-flex align-items-start"><div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical"><button class="nav-link active" id="v-pills-ovv-tab" data-bs-toggle="pill" data-bs-target="#v-pills-ovv" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Overview</button><button class="nav-link" id="v-pills-subsum-tab" data-bs-toggle="pill" data-bs-target="#v-pills-subsum" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Submission Summary</button><button class="nav-link" id="v-pills-compreport-tab" data-bs-toggle="pill" data-bs-target="#v-pills-compreport" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Compiler Report</button><button class="nav-link" id="v-pills-q1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-q1" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Question 1</button><button class="nav-link" id="v-pills-q2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-q2" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Question 2</button><button class="nav-link" id="v-pills-q3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-q3" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Question 3</button><button class="nav-link" id="v-pills-q4-tab" data-bs-toggle="pill" data-bs-target="#v-pills-q4" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Question 4</button><button class="nav-link" id="v-pills-q5-tab" data-bs-toggle="pill" data-bs-target="#v-pills-q5" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Question 5</button><button class="nav-link" id="v-pills-q6-tab" data-bs-toggle="pill" data-bs-target="#v-pills-q6" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Question 6</button><button class="nav-link" id="v-pills-q7-tab" data-bs-toggle="pill" data-bs-target="#v-pills-q7" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Question 7</button></div><div class="tab-content" id="v-pills-tabContent"><div class="tab-pane fade show active" id="v-pills-ovv" role="tabpanel" aria-labelledby="v-pills-ovv-tab"><h3>Overview</h3><p>Question 1 - Marks: 5/10</p><p>Question 2 - Marks: 5/5</p><p>Question 3 - Marks: 16/25</p><p>Question 4 - Marks: 15/15</p><p>Question 5 - Marks: 15/15</p><p>Question 6 - Marks: 20/20</p><p>Question 7 - Marks: 10/10</p></div><div class="tab-pane fade" id="v-pills-subsum" role="tabpanel" aria-labelledby="v-pills-subsum-tab"><h3>Submission Summary</h3><pre>Firas A/Solution
+
+├── answerFiles
+
+│   ├── 100ExpectedOutput.txt
+
+│   ├── 101ExpectedOutput.txt
+
+│   ├── 105ExpectedOutput.txt
+
+│   ├── 200ExpectedOutput.txt
+
+│   ├── 202ExpectedOutput.txt
+
+│   ├── 203ExpectedOutput.txt
+
+│   ├── 204ExpectedOutput.txt
+
+│   ├── 300ExpectedOutput.txt
+
+│   ├── 302ExpectedOutput.txt
+
+│   ├── 305ExpectedOutput.txt
+
+│   └── 306ExpectedOutput.txt
+
+├── Assignment211.iml
+
+├── src
+
+│   └── StudentMarking.java
+
+├── StudentOutput.txt
+
+└── testFiles
+
+    ├── 100TestInput.txt
+
+    ├── 101TestInput.txt
+
+    ├── 105TestInput.txt
+
+    ├── 200TestInput.txt
+
+    ├── 202TestInput.txt
+
+    ├── 203TestInput.txt
+
+    ├── 204TestInput.txt
+
+    ├── 300TestInput.txt
+
+    ├── 302TestInput.txt
+
+    ├── 305TestInput.txt
+
+    └── 306TestInput.txt
+
+
+
+3 directories, 25 files
+
+</pre><br><p>Submission structure looks correct!</p></div><div class="tab-pane fade" id="v-pills-compreport" role="tabpanel" aria-labelledby="v-pills-compreport-tab"><h3>Compiler report</h3><pre>No compile issues!</pre><br></div><div class="tab-pane fade" id="v-pills-q1" role="tabpanel" aria-labelledby="v-pills-q1-tab"><h3>Question 1 - Marks: 5/10</h3><h4>Test 400</h4><p>Input data:<pre></pre></p><p>Note that spaces have been replaced with •</p><table><tr><td><p>Program output: <br><pre>001 : Please•enter•mark•45•for•student•HT05hf
+
+</pre></p></td><td><p>Expected output:<br><pre>001 : Please•enter•mark•45•for•student•HT05hf
+
+</pre></p></td><td><p><br>&#10003</p></td><td><p><br>Exact match: 1.11%</p></td></tr></table><hr><h4>Test 401</h4><p>Input data:<pre></pre></p><p>Note that spaces have been replaced with •</p><table><tr><td><p>Program output: <br><pre><span>001: Your•studID•is•A</span>
+</pre></p></td><td><p>Expected output:<br><pre>001 : AK05hm
+</pre></p></td><td><p><br>&#10007</p></td><td><p><br>0%</p></td></tr></table><hr><h4>Test 402</h4><p>Input data:<pre></pre></p><p>Note that spaces have been replaced with •</p><table><tr><td><p>Program output: <br><pre>001 : You•entered•a•given•name•of•A•and•a•surname•of•K
+
+<span>002: 
+</span>
+</pre></p></td><td><p>Expected output:<br><pre>001 : You•entered•a•given•name•of•A•and•a•surname•of•K
+
+002 : Your•studID•is•5
+</pre></p></td><td><p><br>&#10007</p></td><td><p><br>0%</p></td></tr></table><hr><h4>Test 403</h4><p>Input data:<pre></pre></p><p>Note that spaces have been replaced with •</p><table><tr><td><p>Program output: <br><pre>001 : Student•JY09dt•has•a•lowest•mark•of•67
+
+002 : A•highest•mark•of•89
+
+</pre></p></td><td><p>Expected output:<br><pre>001 : Student•JY09dt•has•a•lowest•mark•of•67
+
+002 : A•highest•mark•of•89
+
+</pre></p></td><td><p><br>&#10003</p></td><td><p><br>Exact match: 1.11%</p></td></tr></table><hr><h4>Test 404</h4><p>Input data:<pre></pre></p><p>Note that spaces have been replaced with •</p><table><tr><td><p>Program output: <br><pre>001 : Student•***JY09dt***•has•an•average•of•35.34
+
+</pre></p></td><td><p>Expected output:<br><pre>001 : Student•***JY09dt***•has•an•average•of•35.34
+
+</pre></p></td><td><p><br>&#10003</p></td><td><p><br>Exact match: 1.11%</p></td></tr></table><hr><h4>Test 405</h4><p>Input data:<pre></pre></p><p>Note that spaces have been replaced with •</p><table><tr><td><p>Program output: <br><pre><span>001: Exception•in•thread•"main"•java.util.IllegalFormatConversionException:•c•!=•java.lang.String
+</span>
+<span>002: 	at•java.base/java.util.Formatter$FormatSpecifier.failConversion(Formatter.java:4426)
+</span>
+<span>003: 	at•java.base/java.util.Formatter$FormatSpecifier.printCharacter(Formatter.java:3014)
+</span>
+<span>004: 	at•java.base/java.util.Formatter$FormatSpecifier.print(Formatter.java:2902)
+</span>
+<span>005: 	at•java.base/java.util.Formatter.format(Formatter.java:2673)
+</span>
+<span>006: 	at•java.base/java.util.Formatter.format(Formatter.java:2609)
+</span>
+<span>007: 	at•java.base/java.lang.String.format(String.java:2897)
+</span>
+<span>008: 	at•PrintTest6.main(PrintTest6.java:6)
+</span>
+</pre></p></td><td><p>Expected output:<br><pre>001 : •••*
+002 : 
+
+003 : 
+
+004 : 
+
+005 : 
+
+006 : 
+
+007 : 
+
+008 : 
+
+</pre></p></td><td><p><br>&#10007</p></td><td><p><br>0%</p></td></tr></table><hr><h4>Test 406</h4><p>Input data:<pre></pre></p><p>Note that spaces have been replaced with •</p><table><tr><td><p>Program output: <br><pre><span>001: Exception•in•thread•"main"•java.util.IllegalFormatConversionException:•c•!=•java.lang.String
+</span>
+<span>002: 	at•java.base/java.util.Formatter$FormatSpecifier.failConversion(Formatter.java:4426)
+</span>
+<span>003: 	at•java.base/java.util.Formatter$FormatSpecifier.printCharacter(Formatter.java:3014)
+</span>
+<span>004: 	at•java.base/java.util.Formatter$FormatSpecifier.print(Formatter.java:2902)
+</span>
+<span>005: 	at•java.base/java.util.Formatter.format(Formatter.java:2673)
+</span>
+<span>006: 	at•java.base/java.util.Formatter.format(Formatter.java:2609)
+</span>
+<span>007: 	at•java.base/java.lang.String.format(String.java:2897)
+</span>
+<span>008: 	at•PrintTest7.main(PrintTest7.java:6)
+</span>
+</pre></p></td><td><p>Expected output:<br><pre>001 : •••••••••••*
+002 : 
+
+003 : 
+
+004 : 
+
+005 : 
+
+006 : 
+
+007 : 
+
+008 : 
+
+</pre></p></td><td><p><br>&#10007</p></td><td><p><br>0%</p></td></tr></table><hr><h4>Test 407</h4><p>Input data:<pre></pre></p><p>Note that spaces have been replaced with •</p><table><tr><td><p>Program output: <br><pre><span>001: Exception•in•thread•"main"•java.util.MissingFormatArgumentException:•Format•specifier•'%12d'
+</span>
+<span>002: 	at•java.base/java.util.Formatter.format(Formatter.java:2672)
+</span>
+<span>003: 	at•java.base/java.util.Formatter.format(Formatter.java:2609)
+</span>
+<span>004: 	at•java.base/java.lang.String.format(String.java:2897)
+</span>
+<span>005: 	at•PrintTest8.main(PrintTest8.java:6)
+</span>
+</pre></p></td><td><p>Expected output:<br><pre>001 : Highest•••••Lowest
+
+002 : ••58••••••••••23
+
+003 : 
+
+004 : 
+
+005 : 
+
+</pre></p></td><td><p><br>&#10007</p></td><td><p><br>0%</p></td></tr></table><hr><h4>Test 408</h4><p>Input data:<pre></pre></p><p>Note that spaces have been replaced with •</p><table><tr><td><p>Program output: <br><pre>001 : |•Student•ID•••2•is•JG07mg•|•Average•is•57.45•|
+
+</pre></p></td><td><p>Expected output:<br><pre>001 : |•Student•ID•••2•is•JG07mg•|•Average•is•57.45•|
+
+</pre></p></td><td><p><br>&#10003</p></td><td><p><br>Exact match: 1.11%</p></td></tr></table><hr></div><div class="tab-pane fade" id="v-pills-q2" role="tabpanel" aria-labelledby="v-pills-q2-tab"><h3>Question 2 - Marks: 5/5</h3><h4>Test 000</h4><p>Input data:<pre>0
+
+
+</pre></p><p>Note that spaces have been replaced with •</p><table><tr><td><p>Program output: <br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Goodbye
+
+</pre></p></td><td><p>Expected output:<br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Goodbye
+
+</pre></p></td><td><p><br>&#10003</p></td><td><p><br>Exact match: 5.00%</p></td></tr></table><hr></div><div class="tab-pane fade" id="v-pills-q3" role="tabpanel" aria-labelledby="v-pills-q3-tab"><h3>Question 3 - Marks: 16/25</h3><h4>Test 001</h4><p>Input data:<pre>1
+
+0
+
+0
+
+
+</pre></p><p>Note that spaces have been replaced with •</p><table><tr><td><p>Program output: <br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : 
+
+009 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+010 : 0.•Exit
+
+011 : 1.•Generate•a•student•ID
+
+012 : 2.•Capture•marks•for•students
+
+013 : 3.•List•student•IDs•and•average•mark
+
+014 : Goodbye
+
+</pre></p></td><td><p>Expected output:<br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : 
+
+009 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+010 : 0.•Exit
+
+011 : 1.•Generate•a•student•ID
+
+012 : 2.•Capture•marks•for•students
+
+013 : 3.•List•student•IDs•and•average•mark
+
+014 : Goodbye
+
+</pre></p></td><td><p><br>&#10003</p></td><td><p><br>Exact match: 1.56%</p></td></tr></table><hr><h4>Test 002</h4><p>Input data:<pre>1
+
+0
+
+1
+
+0
+
+0
+
+
+</pre></p><p>Note that spaces have been replaced with •</p><table><tr><td><p>Program output: <br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : 
+
+009 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+010 : 0.•Exit
+
+011 : 1.•Generate•a•student•ID
+
+012 : 2.•Capture•marks•for•students
+
+013 : 3.•List•student•IDs•and•average•mark
+
+014 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+015 : 
+
+016 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+017 : 0.•Exit
+
+018 : 1.•Generate•a•student•ID
+
+019 : 2.•Capture•marks•for•students
+
+020 : 3.•List•student•IDs•and•average•mark
+
+021 : Goodbye
+
+</pre></p></td><td><p>Expected output:<br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : 
+
+009 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+010 : 0.•Exit
+
+011 : 1.•Generate•a•student•ID
+
+012 : 2.•Capture•marks•for•students
+
+013 : 3.•List•student•IDs•and•average•mark
+
+014 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+015 : 
+
+016 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+017 : 0.•Exit
+
+018 : 1.•Generate•a•student•ID
+
+019 : 2.•Capture•marks•for•students
+
+020 : 3.•List•student•IDs•and•average•mark
+
+021 : Goodbye
+
+</pre></p></td><td><p><br>&#10003</p></td><td><p><br>Exact match: 1.56%</p></td></tr></table><hr><h4>Test 003</h4><p>Input data:<pre>2
+
+0
+
+0
+
+
+</pre></p><p>Note that spaces have been replaced with •</p><table><tr><td><p>Program output: <br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+008 : 
+
+009 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+010 : 0.•Exit
+
+011 : 1.•Generate•a•student•ID
+
+012 : 2.•Capture•marks•for•students
+
+013 : 3.•List•student•IDs•and•average•mark
+
+014 : Goodbye
+
+</pre></p></td><td><p>Expected output:<br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+008 : 
+
+009 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+010 : 0.•Exit
+
+011 : 1.•Generate•a•student•ID
+
+012 : 2.•Capture•marks•for•students
+
+013 : 3.•List•student•IDs•and•average•mark
+
+014 : Goodbye
+
+</pre></p></td><td><p><br>&#10003</p></td><td><p><br>Exact match: 1.56%</p></td></tr></table><hr><h4>Test 004</h4><p>Input data:<pre>2
+
+0
+
+2
+
+0
+
+0
+
+
+</pre></p><p>Note that spaces have been replaced with •</p><table><tr><td><p>Program output: <br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+008 : 
+
+009 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+010 : 0.•Exit
+
+011 : 1.•Generate•a•student•ID
+
+012 : 2.•Capture•marks•for•students
+
+013 : 3.•List•student•IDs•and•average•mark
+
+014 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+015 : 
+
+016 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+017 : 0.•Exit
+
+018 : 1.•Generate•a•student•ID
+
+019 : 2.•Capture•marks•for•students
+
+020 : 3.•List•student•IDs•and•average•mark
+
+021 : Goodbye
+
+</pre></p></td><td><p>Expected output:<br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+008 : 
+
+009 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+010 : 0.•Exit
+
+011 : 1.•Generate•a•student•ID
+
+012 : 2.•Capture•marks•for•students
+
+013 : 3.•List•student•IDs•and•average•mark
+
+014 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+015 : 
+
+016 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+017 : 0.•Exit
+
+018 : 1.•Generate•a•student•ID
+
+019 : 2.•Capture•marks•for•students
+
+020 : 3.•List•student•IDs•and•average•mark
+
+021 : Goodbye
+
+</pre></p></td><td><p><br>&#10003</p></td><td><p><br>Exact match: 1.56%</p></td></tr></table><hr><h4>Test 005</h4><p>Input data:<pre>3
+
+0
+
+
+</pre></p><p>Note that spaces have been replaced with •</p><table><tr><td><p>Program output: <br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : 
+
+008 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+009 : 0.•Exit
+
+010 : 1.•Generate•a•student•ID
+
+011 : 2.•Capture•marks•for•students
+
+012 : 3.•List•student•IDs•and•average•mark
+
+013 : Goodbye
+
+</pre></p></td><td><p>Expected output:<br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : 
+
+008 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+009 : 0.•Exit
+
+010 : 1.•Generate•a•student•ID
+
+011 : 2.•Capture•marks•for•students
+
+012 : 3.•List•student•IDs•and•average•mark
+
+013 : Goodbye
+
+</pre></p></td><td><p><br>&#10003</p></td><td><p><br>Exact match: 1.56%</p></td></tr></table><hr><h4>Test 006</h4><p>Input data:<pre>3
+
+3
+
+0
+
+
+</pre></p><p>Note that spaces have been replaced with •</p><table><tr><td><p>Program output: <br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : 
+
+008 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+009 : 0.•Exit
+
+010 : 1.•Generate•a•student•ID
+
+011 : 2.•Capture•marks•for•students
+
+012 : 3.•List•student•IDs•and•average•mark
+
+013 : 
+
+014 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+015 : 0.•Exit
+
+016 : 1.•Generate•a•student•ID
+
+017 : 2.•Capture•marks•for•students
+
+018 : 3.•List•student•IDs•and•average•mark
+
+019 : Goodbye
+
+</pre></p></td><td><p>Expected output:<br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : 
+
+008 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+009 : 0.•Exit
+
+010 : 1.•Generate•a•student•ID
+
+011 : 2.•Capture•marks•for•students
+
+012 : 3.•List•student•IDs•and•average•mark
+
+013 : 
+
+014 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+015 : 0.•Exit
+
+016 : 1.•Generate•a•student•ID
+
+017 : 2.•Capture•marks•for•students
+
+018 : 3.•List•student•IDs•and•average•mark
+
+019 : Goodbye
+
+</pre></p></td><td><p><br>&#10003</p></td><td><p><br>Exact match: 1.56%</p></td></tr></table><hr><h4>Test 007</h4><p>Input data:<pre>1
+
+0
+
+2
+
+0
+
+0
+
+
+</pre></p><p>Note that spaces have been replaced with •</p><table><tr><td><p>Program output: <br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : 
+
+009 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+010 : 0.•Exit
+
+011 : 1.•Generate•a•student•ID
+
+012 : 2.•Capture•marks•for•students
+
+013 : 3.•List•student•IDs•and•average•mark
+
+014 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+015 : 
+
+016 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+017 : 0.•Exit
+
+018 : 1.•Generate•a•student•ID
+
+019 : 2.•Capture•marks•for•students
+
+020 : 3.•List•student•IDs•and•average•mark
+
+021 : Goodbye
+
+</pre></p></td><td><p>Expected output:<br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : 
+
+009 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+010 : 0.•Exit
+
+011 : 1.•Generate•a•student•ID
+
+012 : 2.•Capture•marks•for•students
+
+013 : 3.•List•student•IDs•and•average•mark
+
+014 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+015 : 
+
+016 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+017 : 0.•Exit
+
+018 : 1.•Generate•a•student•ID
+
+019 : 2.•Capture•marks•for•students
+
+020 : 3.•List•student•IDs•and•average•mark
+
+021 : Goodbye
+
+</pre></p></td><td><p><br>&#10003</p></td><td><p><br>Exact match: 1.56%</p></td></tr></table><hr><h4>Test 008</h4><p>Input data:<pre>1
+
+0
+
+2
+
+0
+
+3
+
+0
+
+
+</pre></p><p>Note that spaces have been replaced with •</p><table><tr><td><p>Program output: <br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : 
+
+009 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+010 : 0.•Exit
+
+011 : 1.•Generate•a•student•ID
+
+012 : 2.•Capture•marks•for•students
+
+013 : 3.•List•student•IDs•and•average•mark
+
+014 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+015 : 
+
+016 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+017 : 0.•Exit
+
+018 : 1.•Generate•a•student•ID
+
+019 : 2.•Capture•marks•for•students
+
+020 : 3.•List•student•IDs•and•average•mark
+
+<span>021: |•Student•ID•••1•is••••••••|•Average•is••0.00•|
+</span>
+<span>022: 
+</span>
+<span>023: Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+</span>
+<span>024: 0.•Exit
+</span>
+<span>025: 1.•Generate•a•student•ID
+</span>
+<span>026: 2.•Capture•marks•for•students
+</span>
+<span>027: 3.•List•student•IDs•and•average•mark
+</span>
+<span>028: Goodbye
+</span>
+</pre></p></td><td><p>Expected output:<br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : 
+
+009 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+010 : 0.•Exit
+
+011 : 1.•Generate•a•student•ID
+
+012 : 2.•Capture•marks•for•students
+
+013 : 3.•List•student•IDs•and•average•mark
+
+014 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+015 : 
+
+016 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+017 : 0.•Exit
+
+018 : 1.•Generate•a•student•ID
+
+019 : 2.•Capture•marks•for•students
+
+020 : 3.•List•student•IDs•and•average•mark
+
+021 : 
+
+022 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+023 : 0.•Exit
+
+024 : 1.•Generate•a•student•ID
+
+025 : 2.•Capture•marks•for•students
+
+026 : 3.•List•student•IDs•and•average•mark
+
+027 : Goodbye
+
+028 : 
+
+</pre></p></td><td><p><br>&#10007</p></td><td><p><br>0%</p></td></tr></table><hr><h4>Test 009</h4><p>Input data:<pre>1
+
+0
+
+3
+
+0
+
+
+</pre></p><p>Note that spaces have been replaced with •</p><table><tr><td><p>Program output: <br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : 
+
+009 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+010 : 0.•Exit
+
+011 : 1.•Generate•a•student•ID
+
+012 : 2.•Capture•marks•for•students
+
+013 : 3.•List•student•IDs•and•average•mark
+
+<span>014: |•Student•ID•••1•is••••••••|•Average•is••0.00•|
+</span>
+<span>015: 
+</span>
+<span>016: Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+</span>
+<span>017: 0.•Exit
+</span>
+<span>018: 1.•Generate•a•student•ID
+</span>
+<span>019: 2.•Capture•marks•for•students
+</span>
+<span>020: 3.•List•student•IDs•and•average•mark
+</span>
+<span>021: Goodbye
+</span>
+</pre></p></td><td><p>Expected output:<br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : 
+
+009 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+010 : 0.•Exit
+
+011 : 1.•Generate•a•student•ID
+
+012 : 2.•Capture•marks•for•students
+
+013 : 3.•List•student•IDs•and•average•mark
+
+014 : 
+
+015 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+016 : 0.•Exit
+
+017 : 1.•Generate•a•student•ID
+
+018 : 2.•Capture•marks•for•students
+
+019 : 3.•List•student•IDs•and•average•mark
+
+020 : Goodbye
+
+021 : 
+
+</pre></p></td><td><p><br>&#10007</p></td><td><p><br>0%</p></td></tr></table><hr><h4>Test 010</h4><p>Input data:<pre>2
+
+0
+
+3
+
+0
+
+
+</pre></p><p>Note that spaces have been replaced with •</p><table><tr><td><p>Program output: <br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+008 : 
+
+009 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+010 : 0.•Exit
+
+011 : 1.•Generate•a•student•ID
+
+012 : 2.•Capture•marks•for•students
+
+013 : 3.•List•student•IDs•and•average•mark
+
+014 : 
+
+015 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+016 : 0.•Exit
+
+017 : 1.•Generate•a•student•ID
+
+018 : 2.•Capture•marks•for•students
+
+019 : 3.•List•student•IDs•and•average•mark
+
+020 : Goodbye
+
+</pre></p></td><td><p>Expected output:<br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+008 : 
+
+009 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+010 : 0.•Exit
+
+011 : 1.•Generate•a•student•ID
+
+012 : 2.•Capture•marks•for•students
+
+013 : 3.•List•student•IDs•and•average•mark
+
+014 : 
+
+015 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+016 : 0.•Exit
+
+017 : 1.•Generate•a•student•ID
+
+018 : 2.•Capture•marks•for•students
+
+019 : 3.•List•student•IDs•and•average•mark
+
+020 : Goodbye
+
+</pre></p></td><td><p><br>&#10003</p></td><td><p><br>Exact match: 1.56%</p></td></tr></table><hr><h4>Test 011</h4><p>Input data:<pre>2
+
+0
+
+1
+
+0
+
+3
+
+0
+
+
+</pre></p><p>Note that spaces have been replaced with •</p><table><tr><td><p>Program output: <br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+008 : 
+
+009 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+010 : 0.•Exit
+
+011 : 1.•Generate•a•student•ID
+
+012 : 2.•Capture•marks•for•students
+
+013 : 3.•List•student•IDs•and•average•mark
+
+014 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+015 : 
+
+016 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+017 : 0.•Exit
+
+018 : 1.•Generate•a•student•ID
+
+019 : 2.•Capture•marks•for•students
+
+020 : 3.•List•student•IDs•and•average•mark
+
+<span>021: |•Student•ID•••1•is••••••••|•Average•is••0.00•|
+</span>
+<span>022: 
+</span>
+<span>023: Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+</span>
+<span>024: 0.•Exit
+</span>
+<span>025: 1.•Generate•a•student•ID
+</span>
+<span>026: 2.•Capture•marks•for•students
+</span>
+<span>027: 3.•List•student•IDs•and•average•mark
+</span>
+<span>028: Goodbye
+</span>
+</pre></p></td><td><p>Expected output:<br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+008 : 
+
+009 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+010 : 0.•Exit
+
+011 : 1.•Generate•a•student•ID
+
+012 : 2.•Capture•marks•for•students
+
+013 : 3.•List•student•IDs•and•average•mark
+
+014 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+015 : 
+
+016 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+017 : 0.•Exit
+
+018 : 1.•Generate•a•student•ID
+
+019 : 2.•Capture•marks•for•students
+
+020 : 3.•List•student•IDs•and•average•mark
+
+021 : 
+
+022 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+023 : 0.•Exit
+
+024 : 1.•Generate•a•student•ID
+
+025 : 2.•Capture•marks•for•students
+
+026 : 3.•List•student•IDs•and•average•mark
+
+027 : Goodbye
+
+028 : 
+
+</pre></p></td><td><p><br>&#10007</p></td><td><p><br>0%</p></td></tr></table><hr><h4>Test 012</h4><p>Input data:<pre>3
+
+1
+
+0
+
+0
+
+
+</pre></p><p>Note that spaces have been replaced with •</p><table><tr><td><p>Program output: <br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : 
+
+008 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+009 : 0.•Exit
+
+010 : 1.•Generate•a•student•ID
+
+011 : 2.•Capture•marks•for•students
+
+012 : 3.•List•student•IDs•and•average•mark
+
+013 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+014 : 
+
+015 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+016 : 0.•Exit
+
+017 : 1.•Generate•a•student•ID
+
+018 : 2.•Capture•marks•for•students
+
+019 : 3.•List•student•IDs•and•average•mark
+
+020 : Goodbye
+
+</pre></p></td><td><p>Expected output:<br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : 
+
+008 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+009 : 0.•Exit
+
+010 : 1.•Generate•a•student•ID
+
+011 : 2.•Capture•marks•for•students
+
+012 : 3.•List•student•IDs•and•average•mark
+
+013 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+014 : 
+
+015 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+016 : 0.•Exit
+
+017 : 1.•Generate•a•student•ID
+
+018 : 2.•Capture•marks•for•students
+
+019 : 3.•List•student•IDs•and•average•mark
+
+020 : Goodbye
+
+</pre></p></td><td><p><br>&#10003</p></td><td><p><br>Exact match: 1.56%</p></td></tr></table><hr><h4>Test 013</h4><p>Input data:<pre>4
+
+0
+
+
+</pre></p><p>Note that spaces have been replaced with •</p><table><tr><td><p>Program output: <br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : You•have•entered•an•invalid•option.•Enter•0,•1,•2•or•3
+
+<span>008: Goodbye
+</span>
+<span>009: 
+</span>
+<span>010: 
+</span>
+<span>011: 
+</span>
+<span>012: 
+</span>
+<span>013: 
+</span>
+<span>014: 
+</span>
+</pre></p></td><td><p>Expected output:<br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : You•have•entered•an•invalid•option.•Enter•0,•1,•2•or•3
+
+008 : 
+
+009 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+010 : 0.•Exit
+
+011 : 1.•Generate•a•student•ID
+
+012 : 2.•Capture•marks•for•students
+
+013 : 3.•List•student•IDs•and•average•mark
+
+014 : Goodbye
+
+</pre></p></td><td><p><br>&#10007</p></td><td><p><br>0%</p></td></tr></table><hr><h4>Test 014</h4><p>Input data:<pre>-1
+
+0
+
+
+</pre></p><p>Note that spaces have been replaced with •</p><table><tr><td><p>Program output: <br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : You•have•entered•an•invalid•option.•Enter•0,•1,•2•or•3
+
+<span>008: Goodbye
+</span>
+<span>009: 
+</span>
+<span>010: 
+</span>
+<span>011: 
+</span>
+<span>012: 
+</span>
+<span>013: 
+</span>
+<span>014: 
+</span>
+</pre></p></td><td><p>Expected output:<br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : You•have•entered•an•invalid•option.•Enter•0,•1,•2•or•3
+
+008 : 
+
+009 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+010 : 0.•Exit
+
+011 : 1.•Generate•a•student•ID
+
+012 : 2.•Capture•marks•for•students
+
+013 : 3.•List•student•IDs•and•average•mark
+
+014 : Goodbye
+
+</pre></p></td><td><p><br>&#10007</p></td><td><p><br>0%</p></td></tr></table><hr><h4>Test 015</h4><p>Input data:<pre>1
+
+0
+
+3
+
+2
+
+0
+
+0
+
+
+</pre></p><p>Note that spaces have been replaced with •</p><table><tr><td><p>Program output: <br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : 
+
+009 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+010 : 0.•Exit
+
+011 : 1.•Generate•a•student•ID
+
+012 : 2.•Capture•marks•for•students
+
+013 : 3.•List•student•IDs•and•average•mark
+
+<span>014: |•Student•ID•••1•is••••••••|•Average•is••0.00•|
+</span>
+<span>015: 
+</span>
+<span>016: Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+</span>
+<span>017: 0.•Exit
+</span>
+<span>018: 1.•Generate•a•student•ID
+</span>
+<span>019: 2.•Capture•marks•for•students
+</span>
+<span>020: 3.•List•student•IDs•and•average•mark
+</span>
+<span>021: Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+</span>
+<span>022: 
+</span>
+<span>023: Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+</span>
+<span>024: 0.•Exit
+</span>
+<span>025: 1.•Generate•a•student•ID
+</span>
+<span>026: 2.•Capture•marks•for•students
+</span>
+<span>027: 3.•List•student•IDs•and•average•mark
+</span>
+<span>028: Goodbye
+</span>
+</pre></p></td><td><p>Expected output:<br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : 
+
+009 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+010 : 0.•Exit
+
+011 : 1.•Generate•a•student•ID
+
+012 : 2.•Capture•marks•for•students
+
+013 : 3.•List•student•IDs•and•average•mark
+
+014 : 
+
+015 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+016 : 0.•Exit
+
+017 : 1.•Generate•a•student•ID
+
+018 : 2.•Capture•marks•for•students
+
+019 : 3.•List•student•IDs•and•average•mark
+
+020 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+021 : 
+
+022 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+023 : 0.•Exit
+
+024 : 1.•Generate•a•student•ID
+
+025 : 2.•Capture•marks•for•students
+
+026 : 3.•List•student•IDs•and•average•mark
+
+027 : Goodbye
+
+028 : 
+
+</pre></p></td><td><p><br>&#10007</p></td><td><p><br>0%</p></td></tr></table><hr><h4>Test 016</h4><p>Input data:<pre>3
+
+2
+
+0
+
+0
+
+
+</pre></p><p>Note that spaces have been replaced with •</p><table><tr><td><p>Program output: <br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : 
+
+008 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+009 : 0.•Exit
+
+010 : 1.•Generate•a•student•ID
+
+011 : 2.•Capture•marks•for•students
+
+012 : 3.•List•student•IDs•and•average•mark
+
+013 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+014 : 
+
+015 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+016 : 0.•Exit
+
+017 : 1.•Generate•a•student•ID
+
+018 : 2.•Capture•marks•for•students
+
+019 : 3.•List•student•IDs•and•average•mark
+
+020 : Goodbye
+
+</pre></p></td><td><p>Expected output:<br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : 
+
+008 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+009 : 0.•Exit
+
+010 : 1.•Generate•a•student•ID
+
+011 : 2.•Capture•marks•for•students
+
+012 : 3.•List•student•IDs•and•average•mark
+
+013 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+014 : 
+
+015 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+016 : 0.•Exit
+
+017 : 1.•Generate•a•student•ID
+
+018 : 2.•Capture•marks•for•students
+
+019 : 3.•List•student•IDs•and•average•mark
+
+020 : Goodbye
+
+</pre></p></td><td><p><br>&#10003</p></td><td><p><br>Exact match: 1.56%</p></td></tr></table><hr></div><div class="tab-pane fade" id="v-pills-q4" role="tabpanel" aria-labelledby="v-pills-q4-tab"><h3>Question 4 - Marks: 15/15</h3><h4>Test 102</h4><p>Input data:<pre>1
+
+Java Is
+
+1
+
+Neville Potter
+
+1
+
+Hermione Dumbledore
+
+0
+
+
+</pre></p><p>Note that spaces have been replaced with •</p><table><tr><td><p>Program output: <br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : You•entered•a•given•name•of•Java•and•a•surname•of•Is
+
+009 : Your•studID•is•JI02vs
+
+010 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+011 : 0.•Exit
+
+012 : 1.•Generate•a•student•ID
+
+013 : 2.•Capture•marks•for•students
+
+014 : 3.•List•student•IDs•and•average•mark
+
+015 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+016 : You•entered•a•given•name•of•Neville•and•a•surname•of•Potter
+
+017 : Your•studID•is•NP06it
+
+018 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+019 : 0.•Exit
+
+020 : 1.•Generate•a•student•ID
+
+021 : 2.•Capture•marks•for•students
+
+022 : 3.•List•student•IDs•and•average•mark
+
+023 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+024 : You•entered•a•given•name•of•Hermione•and•a•surname•of•Dumbledore
+
+025 : Your•studID•is•HD10ie
+
+026 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+027 : 0.•Exit
+
+028 : 1.•Generate•a•student•ID
+
+029 : 2.•Capture•marks•for•students
+
+030 : 3.•List•student•IDs•and•average•mark
+
+031 : Goodbye
+
+</pre></p></td><td><p>Expected output:<br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : You•entered•a•given•name•of•Java•and•a•surname•of•Is
+
+009 : Your•studID•is•JI02vs
+
+010 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+011 : 0.•Exit
+
+012 : 1.•Generate•a•student•ID
+
+013 : 2.•Capture•marks•for•students
+
+014 : 3.•List•student•IDs•and•average•mark
+
+015 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+016 : You•entered•a•given•name•of•Neville•and•a•surname•of•Potter
+
+017 : Your•studID•is•NP06it
+
+018 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+019 : 0.•Exit
+
+020 : 1.•Generate•a•student•ID
+
+021 : 2.•Capture•marks•for•students
+
+022 : 3.•List•student•IDs•and•average•mark
+
+023 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+024 : You•entered•a•given•name•of•Hermione•and•a•surname•of•Dumbledore
+
+025 : Your•studID•is•HD10ie
+
+026 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+027 : 0.•Exit
+
+028 : 1.•Generate•a•student•ID
+
+029 : 2.•Capture•marks•for•students
+
+030 : 3.•List•student•IDs•and•average•mark
+
+031 : Goodbye
+
+</pre></p></td><td><p><br>&#10003</p></td><td><p><br>Exact match: 2.50%</p></td></tr></table><hr><h4>Test 103</h4><p>Input data:<pre>1
+
+Gloria Maria
+
+1
+
+James Bond
+
+0
+
+
+</pre></p><p>Note that spaces have been replaced with •</p><table><tr><td><p>Program output: <br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : You•entered•a•given•name•of•Gloria•and•a•surname•of•Maria
+
+009 : Your•studID•is•GM05rr
+
+010 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+011 : 0.•Exit
+
+012 : 1.•Generate•a•student•ID
+
+013 : 2.•Capture•marks•for•students
+
+014 : 3.•List•student•IDs•and•average•mark
+
+015 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+016 : You•entered•a•given•name•of•James•and•a•surname•of•Bond
+
+017 : Your•studID•is•JB04mn
+
+018 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+019 : 0.•Exit
+
+020 : 1.•Generate•a•student•ID
+
+021 : 2.•Capture•marks•for•students
+
+022 : 3.•List•student•IDs•and•average•mark
+
+023 : Goodbye
+
+</pre></p></td><td><p>Expected output:<br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : You•entered•a•given•name•of•Gloria•and•a•surname•of•Maria
+
+009 : Your•studID•is•GM05rr
+
+010 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+011 : 0.•Exit
+
+012 : 1.•Generate•a•student•ID
+
+013 : 2.•Capture•marks•for•students
+
+014 : 3.•List•student•IDs•and•average•mark
+
+015 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+016 : You•entered•a•given•name•of•James•and•a•surname•of•Bond
+
+017 : Your•studID•is•JB04mn
+
+018 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+019 : 0.•Exit
+
+020 : 1.•Generate•a•student•ID
+
+021 : 2.•Capture•marks•for•students
+
+022 : 3.•List•student•IDs•and•average•mark
+
+023 : Goodbye
+
+</pre></p></td><td><p><br>&#10003</p></td><td><p><br>Exact match: 2.50%</p></td></tr></table><hr><h4>Test 104</h4><p>Input data:<pre>1
+
+Batman Superman
+
+1
+
+Hakuna Matata
+
+1
+
+Jack likes
+
+1
+
+Brian Brain
+
+1
+
+Turtles are
+
+0
+
+
+</pre></p><p>Note that spaces have been replaced with •</p><table><tr><td><p>Program output: <br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : You•entered•a•given•name•of•Batman•and•a•surname•of•Superman
+
+009 : Your•studID•is•BS08mr
+
+010 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+011 : 0.•Exit
+
+012 : 1.•Generate•a•student•ID
+
+013 : 2.•Capture•marks•for•students
+
+014 : 3.•List•student•IDs•and•average•mark
+
+015 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+016 : You•entered•a•given•name•of•Hakuna•and•a•surname•of•Matata
+
+017 : Your•studID•is•HM06ua
+
+018 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+019 : 0.•Exit
+
+020 : 1.•Generate•a•student•ID
+
+021 : 2.•Capture•marks•for•students
+
+022 : 3.•List•student•IDs•and•average•mark
+
+023 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+024 : You•entered•a•given•name•of•Jack•and•a•surname•of•likes
+
+025 : Your•studID•is•JL05ck
+
+026 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+027 : 0.•Exit
+
+028 : 1.•Generate•a•student•ID
+
+029 : 2.•Capture•marks•for•students
+
+030 : 3.•List•student•IDs•and•average•mark
+
+031 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+032 : You•entered•a•given•name•of•Brian•and•a•surname•of•Brain
+
+033 : Your•studID•is•BB05ia
+
+034 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+035 : 0.•Exit
+
+036 : 1.•Generate•a•student•ID
+
+037 : 2.•Capture•marks•for•students
+
+038 : 3.•List•student•IDs•and•average•mark
+
+039 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+040 : You•entered•a•given•name•of•Turtles•and•a•surname•of•are
+
+041 : Your•studID•is•TA03tr
+
+042 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+043 : 0.•Exit
+
+044 : 1.•Generate•a•student•ID
+
+045 : 2.•Capture•marks•for•students
+
+046 : 3.•List•student•IDs•and•average•mark
+
+047 : Goodbye
+
+</pre></p></td><td><p>Expected output:<br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : You•entered•a•given•name•of•Batman•and•a•surname•of•Superman
+
+009 : Your•studID•is•BS08mr
+
+010 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+011 : 0.•Exit
+
+012 : 1.•Generate•a•student•ID
+
+013 : 2.•Capture•marks•for•students
+
+014 : 3.•List•student•IDs•and•average•mark
+
+015 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+016 : You•entered•a•given•name•of•Hakuna•and•a•surname•of•Matata
+
+017 : Your•studID•is•HM06ua
+
+018 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+019 : 0.•Exit
+
+020 : 1.•Generate•a•student•ID
+
+021 : 2.•Capture•marks•for•students
+
+022 : 3.•List•student•IDs•and•average•mark
+
+023 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+024 : You•entered•a•given•name•of•Jack•and•a•surname•of•likes
+
+025 : Your•studID•is•JL05ck
+
+026 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+027 : 0.•Exit
+
+028 : 1.•Generate•a•student•ID
+
+029 : 2.•Capture•marks•for•students
+
+030 : 3.•List•student•IDs•and•average•mark
+
+031 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+032 : You•entered•a•given•name•of•Brian•and•a•surname•of•Brain
+
+033 : Your•studID•is•BB05ia
+
+034 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+035 : 0.•Exit
+
+036 : 1.•Generate•a•student•ID
+
+037 : 2.•Capture•marks•for•students
+
+038 : 3.•List•student•IDs•and•average•mark
+
+039 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+040 : You•entered•a•given•name•of•Turtles•and•a•surname•of•are
+
+041 : Your•studID•is•TA03tr
+
+042 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+043 : 0.•Exit
+
+044 : 1.•Generate•a•student•ID
+
+045 : 2.•Capture•marks•for•students
+
+046 : 3.•List•student•IDs•and•average•mark
+
+047 : Goodbye
+
+</pre></p></td><td><p><br>&#10003</p></td><td><p><br>Exact match: 2.50%</p></td></tr></table><hr><h4>Test 106</h4><p>Input data:<pre>1
+
+Celinda Hawthorne
+
+0
+
+
+</pre></p><p>Note that spaces have been replaced with •</p><table><tr><td><p>Program output: <br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : You•entered•a•given•name•of•Celinda•and•a•surname•of•Hawthorne
+
+009 : Your•studID•is•CH09ih
+
+010 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+011 : 0.•Exit
+
+012 : 1.•Generate•a•student•ID
+
+013 : 2.•Capture•marks•for•students
+
+014 : 3.•List•student•IDs•and•average•mark
+
+015 : Goodbye
+
+</pre></p></td><td><p>Expected output:<br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : You•entered•a•given•name•of•Celinda•and•a•surname•of•Hawthorne
+
+009 : Your•studID•is•CH09ih
+
+010 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+011 : 0.•Exit
+
+012 : 1.•Generate•a•student•ID
+
+013 : 2.•Capture•marks•for•students
+
+014 : 3.•List•student•IDs•and•average•mark
+
+015 : Goodbye
+
+</pre></p></td><td><p><br>&#10003</p></td><td><p><br>Exact match: 2.50%</p></td></tr></table><hr><h4>Test 107</h4><p>Input data:<pre>1
+
+Harrison Ford
+
+1
+
+Jennifer Lawrence
+
+1
+
+Meryl Streep
+
+1
+
+Michael Douglas
+
+0
+
+
+</pre></p><p>Note that spaces have been replaced with •</p><table><tr><td><p>Program output: <br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : You•entered•a•given•name•of•Harrison•and•a•surname•of•Ford
+
+009 : Your•studID•is•HF04ir
+
+010 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+011 : 0.•Exit
+
+012 : 1.•Generate•a•student•ID
+
+013 : 2.•Capture•marks•for•students
+
+014 : 3.•List•student•IDs•and•average•mark
+
+015 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+016 : You•entered•a•given•name•of•Jennifer•and•a•surname•of•Lawrence
+
+017 : Your•studID•is•JL08ie
+
+018 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+019 : 0.•Exit
+
+020 : 1.•Generate•a•student•ID
+
+021 : 2.•Capture•marks•for•students
+
+022 : 3.•List•student•IDs•and•average•mark
+
+023 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+024 : You•entered•a•given•name•of•Meryl•and•a•surname•of•Streep
+
+025 : Your•studID•is•MS06re
+
+026 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+027 : 0.•Exit
+
+028 : 1.•Generate•a•student•ID
+
+029 : 2.•Capture•marks•for•students
+
+030 : 3.•List•student•IDs•and•average•mark
+
+031 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+032 : You•entered•a•given•name•of•Michael•and•a•surname•of•Douglas
+
+033 : Your•studID•is•MD07hg
+
+034 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+035 : 0.•Exit
+
+036 : 1.•Generate•a•student•ID
+
+037 : 2.•Capture•marks•for•students
+
+038 : 3.•List•student•IDs•and•average•mark
+
+039 : Goodbye
+
+</pre></p></td><td><p>Expected output:<br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : You•entered•a•given•name•of•Harrison•and•a•surname•of•Ford
+
+009 : Your•studID•is•HF04ir
+
+010 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+011 : 0.•Exit
+
+012 : 1.•Generate•a•student•ID
+
+013 : 2.•Capture•marks•for•students
+
+014 : 3.•List•student•IDs•and•average•mark
+
+015 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+016 : You•entered•a•given•name•of•Jennifer•and•a•surname•of•Lawrence
+
+017 : Your•studID•is•JL08ie
+
+018 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+019 : 0.•Exit
+
+020 : 1.•Generate•a•student•ID
+
+021 : 2.•Capture•marks•for•students
+
+022 : 3.•List•student•IDs•and•average•mark
+
+023 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+024 : You•entered•a•given•name•of•Meryl•and•a•surname•of•Streep
+
+025 : Your•studID•is•MS06re
+
+026 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+027 : 0.•Exit
+
+028 : 1.•Generate•a•student•ID
+
+029 : 2.•Capture•marks•for•students
+
+030 : 3.•List•student•IDs•and•average•mark
+
+031 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+032 : You•entered•a•given•name•of•Michael•and•a•surname•of•Douglas
+
+033 : Your•studID•is•MD07hg
+
+034 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+035 : 0.•Exit
+
+036 : 1.•Generate•a•student•ID
+
+037 : 2.•Capture•marks•for•students
+
+038 : 3.•List•student•IDs•and•average•mark
+
+039 : Goodbye
+
+</pre></p></td><td><p><br>&#10003</p></td><td><p><br>Exact match: 2.50%</p></td></tr></table><hr><h4>Test 108</h4><p>Input data:<pre>1
+
+Julia Roach
+
+1
+
+Carolyn Becket
+
+1
+
+Roswell Warrick
+
+1
+
+Regan Tobias
+
+1
+
+Harry Blakeley
+
+1
+
+0
+
+
+</pre></p><p>Note that spaces have been replaced with •</p><table><tr><td><p>Program output: <br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : You•entered•a•given•name•of•Julia•and•a•surname•of•Roach
+
+009 : Your•studID•is•JR05la
+
+010 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+011 : 0.•Exit
+
+012 : 1.•Generate•a•student•ID
+
+013 : 2.•Capture•marks•for•students
+
+014 : 3.•List•student•IDs•and•average•mark
+
+015 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+016 : You•entered•a•given•name•of•Carolyn•and•a•surname•of•Becket
+
+017 : Your•studID•is•CB06ok
+
+018 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+019 : 0.•Exit
+
+020 : 1.•Generate•a•student•ID
+
+021 : 2.•Capture•marks•for•students
+
+022 : 3.•List•student•IDs•and•average•mark
+
+023 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+024 : You•entered•a•given•name•of•Roswell•and•a•surname•of•Warrick
+
+025 : Your•studID•is•RW07wr
+
+026 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+027 : 0.•Exit
+
+028 : 1.•Generate•a•student•ID
+
+029 : 2.•Capture•marks•for•students
+
+030 : 3.•List•student•IDs•and•average•mark
+
+031 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+032 : You•entered•a•given•name•of•Regan•and•a•surname•of•Tobias
+
+033 : Your•studID•is•RT06gi
+
+034 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+035 : 0.•Exit
+
+036 : 1.•Generate•a•student•ID
+
+037 : 2.•Capture•marks•for•students
+
+038 : 3.•List•student•IDs•and•average•mark
+
+039 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+040 : You•entered•a•given•name•of•Harry•and•a•surname•of•Blakeley
+
+041 : Your•studID•is•HB08re
+
+042 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+043 : 0.•Exit
+
+044 : 1.•Generate•a•student•ID
+
+045 : 2.•Capture•marks•for•students
+
+046 : 3.•List•student•IDs•and•average•mark
+
+047 : You•cannot•add•any•more•students•to•the•array
+
+048 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+049 : 0.•Exit
+
+050 : 1.•Generate•a•student•ID
+
+051 : 2.•Capture•marks•for•students
+
+052 : 3.•List•student•IDs•and•average•mark
+
+053 : Goodbye
+
+</pre></p></td><td><p>Expected output:<br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : You•entered•a•given•name•of•Julia•and•a•surname•of•Roach
+
+009 : Your•studID•is•JR05la
+
+010 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+011 : 0.•Exit
+
+012 : 1.•Generate•a•student•ID
+
+013 : 2.•Capture•marks•for•students
+
+014 : 3.•List•student•IDs•and•average•mark
+
+015 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+016 : You•entered•a•given•name•of•Carolyn•and•a•surname•of•Becket
+
+017 : Your•studID•is•CB06ok
+
+018 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+019 : 0.•Exit
+
+020 : 1.•Generate•a•student•ID
+
+021 : 2.•Capture•marks•for•students
+
+022 : 3.•List•student•IDs•and•average•mark
+
+023 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+024 : You•entered•a•given•name•of•Roswell•and•a•surname•of•Warrick
+
+025 : Your•studID•is•RW07wr
+
+026 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+027 : 0.•Exit
+
+028 : 1.•Generate•a•student•ID
+
+029 : 2.•Capture•marks•for•students
+
+030 : 3.•List•student•IDs•and•average•mark
+
+031 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+032 : You•entered•a•given•name•of•Regan•and•a•surname•of•Tobias
+
+033 : Your•studID•is•RT06gi
+
+034 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+035 : 0.•Exit
+
+036 : 1.•Generate•a•student•ID
+
+037 : 2.•Capture•marks•for•students
+
+038 : 3.•List•student•IDs•and•average•mark
+
+039 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+040 : You•entered•a•given•name•of•Harry•and•a•surname•of•Blakeley
+
+041 : Your•studID•is•HB08re
+
+042 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+043 : 0.•Exit
+
+044 : 1.•Generate•a•student•ID
+
+045 : 2.•Capture•marks•for•students
+
+046 : 3.•List•student•IDs•and•average•mark
+
+047 : You•cannot•add•any•more•students•to•the•array
+
+048 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+049 : 0.•Exit
+
+050 : 1.•Generate•a•student•ID
+
+051 : 2.•Capture•marks•for•students
+
+052 : 3.•List•student•IDs•and•average•mark
+
+053 : Goodbye
+
+</pre></p></td><td><p><br>&#10003</p></td><td><p><br>Exact match: 2.50%</p></td></tr></table><hr></div><div class="tab-pane fade" id="v-pills-q5" role="tabpanel" aria-labelledby="v-pills-q5-tab"><h3>Question 5 - Marks: 15/15</h3><h4>Test 205</h4><p>Input data:<pre>1
+
+Emmeline Ward
+
+2
+
+EW04lr
+
+85
+
+96
+
+44
+
+n
+
+0
+
+
+</pre></p><p>Note that spaces have been replaced with •</p><table><tr><td><p>Program output: <br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : You•entered•a•given•name•of•Emmeline•and•a•surname•of•Ward
+
+009 : Your•studID•is•EW04lr
+
+010 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+011 : 0.•Exit
+
+012 : 1.•Generate•a•student•ID
+
+013 : 2.•Capture•marks•for•students
+
+014 : 3.•List•student•IDs•and•average•mark
+
+015 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+016 : Please•enter•mark•1•for•student•EW04lr
+
+017 : Please•enter•mark•2•for•student•EW04lr
+
+018 : Please•enter•mark•3•for•student•EW04lr
+
+019 : Student•EW04lr•has•a•lowest•mark•of•44
+
+020 : A•highest•mark•of•96
+
+021 : Student•***EW04lr***•has•an•average•of•75.00
+
+022 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+023 : 
+
+024 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+025 : 0.•Exit
+
+026 : 1.•Generate•a•student•ID
+
+027 : 2.•Capture•marks•for•students
+
+028 : 3.•List•student•IDs•and•average•mark
+
+029 : Goodbye
+
+</pre></p></td><td><p>Expected output:<br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : You•entered•a•given•name•of•Emmeline•and•a•surname•of•Ward
+
+009 : Your•studID•is•EW04lr
+
+010 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+011 : 0.•Exit
+
+012 : 1.•Generate•a•student•ID
+
+013 : 2.•Capture•marks•for•students
+
+014 : 3.•List•student•IDs•and•average•mark
+
+015 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+016 : Please•enter•mark•1•for•student•EW04lr
+
+017 : Please•enter•mark•2•for•student•EW04lr
+
+018 : Please•enter•mark•3•for•student•EW04lr
+
+019 : Student•EW04lr•has•a•lowest•mark•of•44
+
+020 : A•highest•mark•of•96
+
+021 : Student•***EW04lr***•has•an•average•of•75.00
+
+022 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+023 : 
+
+024 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+025 : 0.•Exit
+
+026 : 1.•Generate•a•student•ID
+
+027 : 2.•Capture•marks•for•students
+
+028 : 3.•List•student•IDs•and•average•mark
+
+029 : Goodbye
+
+</pre></p></td><td><p><br>&#10003</p></td><td><p><br>Exact match: 1.88%</p></td></tr></table><hr><h4>Test 206</h4><p>Input data:<pre>1
+
+Chad Evanson
+
+2
+
+CE07an
+
+10
+
+95
+
+25
+
+n
+
+1
+
+Edie Stevensonn
+
+2
+
+ES10in
+
+24
+
+58
+
+63
+
+n
+
+0
+
+
+</pre></p><p>Note that spaces have been replaced with •</p><table><tr><td><p>Program output: <br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : You•entered•a•given•name•of•Chad•and•a•surname•of•Evanson
+
+009 : Your•studID•is•CE07an
+
+010 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+011 : 0.•Exit
+
+012 : 1.•Generate•a•student•ID
+
+013 : 2.•Capture•marks•for•students
+
+014 : 3.•List•student•IDs•and•average•mark
+
+015 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+016 : Please•enter•mark•1•for•student•CE07an
+
+017 : Please•enter•mark•2•for•student•CE07an
+
+018 : Please•enter•mark•3•for•student•CE07an
+
+019 : Student•CE07an•has•a•lowest•mark•of•10
+
+020 : A•highest•mark•of•95
+
+021 : Student•***CE07an***•has•an•average•of•43.33
+
+022 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+023 : 
+
+024 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+025 : 0.•Exit
+
+026 : 1.•Generate•a•student•ID
+
+027 : 2.•Capture•marks•for•students
+
+028 : 3.•List•student•IDs•and•average•mark
+
+029 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+030 : You•entered•a•given•name•of•Edie•and•a•surname•of•Stevensonn
+
+031 : Your•studID•is•ES10in
+
+032 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+033 : 0.•Exit
+
+034 : 1.•Generate•a•student•ID
+
+035 : 2.•Capture•marks•for•students
+
+036 : 3.•List•student•IDs•and•average•mark
+
+037 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+038 : Please•enter•mark•1•for•student•ES10in
+
+039 : Please•enter•mark•2•for•student•ES10in
+
+040 : Please•enter•mark•3•for•student•ES10in
+
+041 : Student•ES10in•has•a•lowest•mark•of•24
+
+042 : A•highest•mark•of•63
+
+043 : Student•***ES10in***•has•an•average•of•48.33
+
+044 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+045 : 
+
+046 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+047 : 0.•Exit
+
+048 : 1.•Generate•a•student•ID
+
+049 : 2.•Capture•marks•for•students
+
+050 : 3.•List•student•IDs•and•average•mark
+
+051 : Goodbye
+
+</pre></p></td><td><p>Expected output:<br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : You•entered•a•given•name•of•Chad•and•a•surname•of•Evanson
+
+009 : Your•studID•is•CE07an
+
+010 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+011 : 0.•Exit
+
+012 : 1.•Generate•a•student•ID
+
+013 : 2.•Capture•marks•for•students
+
+014 : 3.•List•student•IDs•and•average•mark
+
+015 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+016 : Please•enter•mark•1•for•student•CE07an
+
+017 : Please•enter•mark•2•for•student•CE07an
+
+018 : Please•enter•mark•3•for•student•CE07an
+
+019 : Student•CE07an•has•a•lowest•mark•of•10
+
+020 : A•highest•mark•of•95
+
+021 : Student•***CE07an***•has•an•average•of•43.33
+
+022 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+023 : 
+
+024 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+025 : 0.•Exit
+
+026 : 1.•Generate•a•student•ID
+
+027 : 2.•Capture•marks•for•students
+
+028 : 3.•List•student•IDs•and•average•mark
+
+029 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+030 : You•entered•a•given•name•of•Edie•and•a•surname•of•Stevensonn
+
+031 : Your•studID•is•ES10in
+
+032 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+033 : 0.•Exit
+
+034 : 1.•Generate•a•student•ID
+
+035 : 2.•Capture•marks•for•students
+
+036 : 3.•List•student•IDs•and•average•mark
+
+037 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+038 : Please•enter•mark•1•for•student•ES10in
+
+039 : Please•enter•mark•2•for•student•ES10in
+
+040 : Please•enter•mark•3•for•student•ES10in
+
+041 : Student•ES10in•has•a•lowest•mark•of•24
+
+042 : A•highest•mark•of•63
+
+043 : Student•***ES10in***•has•an•average•of•48.33
+
+044 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+045 : 
+
+046 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+047 : 0.•Exit
+
+048 : 1.•Generate•a•student•ID
+
+049 : 2.•Capture•marks•for•students
+
+050 : 3.•List•student•IDs•and•average•mark
+
+051 : Goodbye
+
+</pre></p></td><td><p><br>&#10003</p></td><td><p><br>Exact match: 1.88%</p></td></tr></table><hr><h4>Test 207</h4><p>Input data:<pre>1
+
+Roxy Darby
+
+2
+
+RD05xr
+
+5
+
+28
+
+6
+
+n
+
+1
+
+Tiphanie Everett
+
+2
+
+TE07ar
+
+85
+
+45
+
+21
+
+n
+
+1
+
+Lynnette Wheeler
+
+2
+
+LW07ee
+
+36
+
+52
+
+85
+
+n
+
+0
+
+
+</pre></p><p>Note that spaces have been replaced with •</p><table><tr><td><p>Program output: <br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : You•entered•a•given•name•of•Roxy•and•a•surname•of•Darby
+
+009 : Your•studID•is•RD05xr
+
+010 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+011 : 0.•Exit
+
+012 : 1.•Generate•a•student•ID
+
+013 : 2.•Capture•marks•for•students
+
+014 : 3.•List•student•IDs•and•average•mark
+
+015 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+016 : Please•enter•mark•1•for•student•RD05xr
+
+017 : Please•enter•mark•2•for•student•RD05xr
+
+018 : Please•enter•mark•3•for•student•RD05xr
+
+019 : Student•RD05xr•has•a•lowest•mark•of•5
+
+020 : A•highest•mark•of•28
+
+021 : Student•***RD05xr***•has•an•average•of•13.00
+
+022 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+023 : 
+
+024 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+025 : 0.•Exit
+
+026 : 1.•Generate•a•student•ID
+
+027 : 2.•Capture•marks•for•students
+
+028 : 3.•List•student•IDs•and•average•mark
+
+029 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+030 : You•entered•a•given•name•of•Tiphanie•and•a•surname•of•Everett
+
+031 : Your•studID•is•TE07ar
+
+032 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+033 : 0.•Exit
+
+034 : 1.•Generate•a•student•ID
+
+035 : 2.•Capture•marks•for•students
+
+036 : 3.•List•student•IDs•and•average•mark
+
+037 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+038 : Please•enter•mark•1•for•student•TE07ar
+
+039 : Please•enter•mark•2•for•student•TE07ar
+
+040 : Please•enter•mark•3•for•student•TE07ar
+
+041 : Student•TE07ar•has•a•lowest•mark•of•21
+
+042 : A•highest•mark•of•85
+
+043 : Student•***TE07ar***•has•an•average•of•50.33
+
+044 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+045 : 
+
+046 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+047 : 0.•Exit
+
+048 : 1.•Generate•a•student•ID
+
+049 : 2.•Capture•marks•for•students
+
+050 : 3.•List•student•IDs•and•average•mark
+
+051 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+052 : You•entered•a•given•name•of•Lynnette•and•a•surname•of•Wheeler
+
+053 : Your•studID•is•LW07ee
+
+054 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+055 : 0.•Exit
+
+056 : 1.•Generate•a•student•ID
+
+057 : 2.•Capture•marks•for•students
+
+058 : 3.•List•student•IDs•and•average•mark
+
+059 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+060 : Please•enter•mark•1•for•student•LW07ee
+
+061 : Please•enter•mark•2•for•student•LW07ee
+
+062 : Please•enter•mark•3•for•student•LW07ee
+
+063 : Student•LW07ee•has•a•lowest•mark•of•36
+
+064 : A•highest•mark•of•85
+
+065 : Student•***LW07ee***•has•an•average•of•57.67
+
+066 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+067 : 
+
+068 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+069 : 0.•Exit
+
+070 : 1.•Generate•a•student•ID
+
+071 : 2.•Capture•marks•for•students
+
+072 : 3.•List•student•IDs•and•average•mark
+
+073 : Goodbye
+
+</pre></p></td><td><p>Expected output:<br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : You•entered•a•given•name•of•Roxy•and•a•surname•of•Darby
+
+009 : Your•studID•is•RD05xr
+
+010 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+011 : 0.•Exit
+
+012 : 1.•Generate•a•student•ID
+
+013 : 2.•Capture•marks•for•students
+
+014 : 3.•List•student•IDs•and•average•mark
+
+015 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+016 : Please•enter•mark•1•for•student•RD05xr
+
+017 : Please•enter•mark•2•for•student•RD05xr
+
+018 : Please•enter•mark•3•for•student•RD05xr
+
+019 : Student•RD05xr•has•a•lowest•mark•of•5
+
+020 : A•highest•mark•of•28
+
+021 : Student•***RD05xr***•has•an•average•of•13.00
+
+022 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+023 : 
+
+024 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+025 : 0.•Exit
+
+026 : 1.•Generate•a•student•ID
+
+027 : 2.•Capture•marks•for•students
+
+028 : 3.•List•student•IDs•and•average•mark
+
+029 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+030 : You•entered•a•given•name•of•Tiphanie•and•a•surname•of•Everett
+
+031 : Your•studID•is•TE07ar
+
+032 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+033 : 0.•Exit
+
+034 : 1.•Generate•a•student•ID
+
+035 : 2.•Capture•marks•for•students
+
+036 : 3.•List•student•IDs•and•average•mark
+
+037 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+038 : Please•enter•mark•1•for•student•TE07ar
+
+039 : Please•enter•mark•2•for•student•TE07ar
+
+040 : Please•enter•mark•3•for•student•TE07ar
+
+041 : Student•TE07ar•has•a•lowest•mark•of•21
+
+042 : A•highest•mark•of•85
+
+043 : Student•***TE07ar***•has•an•average•of•50.33
+
+044 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+045 : 
+
+046 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+047 : 0.•Exit
+
+048 : 1.•Generate•a•student•ID
+
+049 : 2.•Capture•marks•for•students
+
+050 : 3.•List•student•IDs•and•average•mark
+
+051 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+052 : You•entered•a•given•name•of•Lynnette•and•a•surname•of•Wheeler
+
+053 : Your•studID•is•LW07ee
+
+054 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+055 : 0.•Exit
+
+056 : 1.•Generate•a•student•ID
+
+057 : 2.•Capture•marks•for•students
+
+058 : 3.•List•student•IDs•and•average•mark
+
+059 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+060 : Please•enter•mark•1•for•student•LW07ee
+
+061 : Please•enter•mark•2•for•student•LW07ee
+
+062 : Please•enter•mark•3•for•student•LW07ee
+
+063 : Student•LW07ee•has•a•lowest•mark•of•36
+
+064 : A•highest•mark•of•85
+
+065 : Student•***LW07ee***•has•an•average•of•57.67
+
+066 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+067 : 
+
+068 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+069 : 0.•Exit
+
+070 : 1.•Generate•a•student•ID
+
+071 : 2.•Capture•marks•for•students
+
+072 : 3.•List•student•IDs•and•average•mark
+
+073 : Goodbye
+
+</pre></p></td><td><p><br>&#10003</p></td><td><p><br>Exact match: 1.88%</p></td></tr></table><hr><h4>Test 208</h4><p>Input data:<pre>1
+
+Phil Blanchett
+
+2
+
+PB09ic
+
+58
+
+28
+
+67
+
+n
+
+1
+
+Nora Blakely
+
+2
+
+NB07rk
+
+36
+
+87
+
+6
+
+n
+
+1
+
+Robert Jernigan
+
+2
+
+RJ08ei
+
+36
+
+25
+
+9
+
+n
+
+1
+
+Eba Wheatley
+
+2
+
+EW08bt
+
+54
+
+68
+
+24
+
+n
+
+0
+
+
+</pre></p><p>Note that spaces have been replaced with •</p><table><tr><td><p>Program output: <br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : You•entered•a•given•name•of•Phil•and•a•surname•of•Blanchett
+
+009 : Your•studID•is•PB09ic
+
+010 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+011 : 0.•Exit
+
+012 : 1.•Generate•a•student•ID
+
+013 : 2.•Capture•marks•for•students
+
+014 : 3.•List•student•IDs•and•average•mark
+
+015 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+016 : Please•enter•mark•1•for•student•PB09ic
+
+017 : Please•enter•mark•2•for•student•PB09ic
+
+018 : Please•enter•mark•3•for•student•PB09ic
+
+019 : Student•PB09ic•has•a•lowest•mark•of•28
+
+020 : A•highest•mark•of•67
+
+021 : Student•***PB09ic***•has•an•average•of•51.00
+
+022 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+023 : 
+
+024 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+025 : 0.•Exit
+
+026 : 1.•Generate•a•student•ID
+
+027 : 2.•Capture•marks•for•students
+
+028 : 3.•List•student•IDs•and•average•mark
+
+029 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+030 : You•entered•a•given•name•of•Nora•and•a•surname•of•Blakely
+
+031 : Your•studID•is•NB07rk
+
+032 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+033 : 0.•Exit
+
+034 : 1.•Generate•a•student•ID
+
+035 : 2.•Capture•marks•for•students
+
+036 : 3.•List•student•IDs•and•average•mark
+
+037 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+038 : Please•enter•mark•1•for•student•NB07rk
+
+039 : Please•enter•mark•2•for•student•NB07rk
+
+040 : Please•enter•mark•3•for•student•NB07rk
+
+041 : Student•NB07rk•has•a•lowest•mark•of•6
+
+042 : A•highest•mark•of•87
+
+043 : Student•***NB07rk***•has•an•average•of•43.00
+
+044 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+045 : 
+
+046 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+047 : 0.•Exit
+
+048 : 1.•Generate•a•student•ID
+
+049 : 2.•Capture•marks•for•students
+
+050 : 3.•List•student•IDs•and•average•mark
+
+051 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+052 : You•entered•a•given•name•of•Robert•and•a•surname•of•Jernigan
+
+053 : Your•studID•is•RJ08ei
+
+054 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+055 : 0.•Exit
+
+056 : 1.•Generate•a•student•ID
+
+057 : 2.•Capture•marks•for•students
+
+058 : 3.•List•student•IDs•and•average•mark
+
+059 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+060 : Please•enter•mark•1•for•student•RJ08ei
+
+061 : Please•enter•mark•2•for•student•RJ08ei
+
+062 : Please•enter•mark•3•for•student•RJ08ei
+
+063 : Student•RJ08ei•has•a•lowest•mark•of•9
+
+064 : A•highest•mark•of•36
+
+065 : Student•***RJ08ei***•has•an•average•of•23.33
+
+066 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+067 : 
+
+068 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+069 : 0.•Exit
+
+070 : 1.•Generate•a•student•ID
+
+071 : 2.•Capture•marks•for•students
+
+072 : 3.•List•student•IDs•and•average•mark
+
+073 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+074 : You•entered•a•given•name•of•Eba•and•a•surname•of•Wheatley
+
+075 : Your•studID•is•EW08bt
+
+076 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+077 : 0.•Exit
+
+078 : 1.•Generate•a•student•ID
+
+079 : 2.•Capture•marks•for•students
+
+080 : 3.•List•student•IDs•and•average•mark
+
+081 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+082 : Please•enter•mark•1•for•student•EW08bt
+
+083 : Please•enter•mark•2•for•student•EW08bt
+
+084 : Please•enter•mark•3•for•student•EW08bt
+
+085 : Student•EW08bt•has•a•lowest•mark•of•24
+
+086 : A•highest•mark•of•68
+
+087 : Student•***EW08bt***•has•an•average•of•48.67
+
+088 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+089 : 
+
+090 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+091 : 0.•Exit
+
+092 : 1.•Generate•a•student•ID
+
+093 : 2.•Capture•marks•for•students
+
+094 : 3.•List•student•IDs•and•average•mark
+
+095 : Goodbye
+
+</pre></p></td><td><p>Expected output:<br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : You•entered•a•given•name•of•Phil•and•a•surname•of•Blanchett
+
+009 : Your•studID•is•PB09ic
+
+010 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+011 : 0.•Exit
+
+012 : 1.•Generate•a•student•ID
+
+013 : 2.•Capture•marks•for•students
+
+014 : 3.•List•student•IDs•and•average•mark
+
+015 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+016 : Please•enter•mark•1•for•student•PB09ic
+
+017 : Please•enter•mark•2•for•student•PB09ic
+
+018 : Please•enter•mark•3•for•student•PB09ic
+
+019 : Student•PB09ic•has•a•lowest•mark•of•28
+
+020 : A•highest•mark•of•67
+
+021 : Student•***PB09ic***•has•an•average•of•51.00
+
+022 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+023 : 
+
+024 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+025 : 0.•Exit
+
+026 : 1.•Generate•a•student•ID
+
+027 : 2.•Capture•marks•for•students
+
+028 : 3.•List•student•IDs•and•average•mark
+
+029 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+030 : You•entered•a•given•name•of•Nora•and•a•surname•of•Blakely
+
+031 : Your•studID•is•NB07rk
+
+032 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+033 : 0.•Exit
+
+034 : 1.•Generate•a•student•ID
+
+035 : 2.•Capture•marks•for•students
+
+036 : 3.•List•student•IDs•and•average•mark
+
+037 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+038 : Please•enter•mark•1•for•student•NB07rk
+
+039 : Please•enter•mark•2•for•student•NB07rk
+
+040 : Please•enter•mark•3•for•student•NB07rk
+
+041 : Student•NB07rk•has•a•lowest•mark•of•6
+
+042 : A•highest•mark•of•87
+
+043 : Student•***NB07rk***•has•an•average•of•43.00
+
+044 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+045 : 
+
+046 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+047 : 0.•Exit
+
+048 : 1.•Generate•a•student•ID
+
+049 : 2.•Capture•marks•for•students
+
+050 : 3.•List•student•IDs•and•average•mark
+
+051 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+052 : You•entered•a•given•name•of•Robert•and•a•surname•of•Jernigan
+
+053 : Your•studID•is•RJ08ei
+
+054 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+055 : 0.•Exit
+
+056 : 1.•Generate•a•student•ID
+
+057 : 2.•Capture•marks•for•students
+
+058 : 3.•List•student•IDs•and•average•mark
+
+059 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+060 : Please•enter•mark•1•for•student•RJ08ei
+
+061 : Please•enter•mark•2•for•student•RJ08ei
+
+062 : Please•enter•mark•3•for•student•RJ08ei
+
+063 : Student•RJ08ei•has•a•lowest•mark•of•9
+
+064 : A•highest•mark•of•36
+
+065 : Student•***RJ08ei***•has•an•average•of•23.33
+
+066 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+067 : 
+
+068 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+069 : 0.•Exit
+
+070 : 1.•Generate•a•student•ID
+
+071 : 2.•Capture•marks•for•students
+
+072 : 3.•List•student•IDs•and•average•mark
+
+073 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+074 : You•entered•a•given•name•of•Eba•and•a•surname•of•Wheatley
+
+075 : Your•studID•is•EW08bt
+
+076 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+077 : 0.•Exit
+
+078 : 1.•Generate•a•student•ID
+
+079 : 2.•Capture•marks•for•students
+
+080 : 3.•List•student•IDs•and•average•mark
+
+081 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+082 : Please•enter•mark•1•for•student•EW08bt
+
+083 : Please•enter•mark•2•for•student•EW08bt
+
+084 : Please•enter•mark•3•for•student•EW08bt
+
+085 : Student•EW08bt•has•a•lowest•mark•of•24
+
+086 : A•highest•mark•of•68
+
+087 : Student•***EW08bt***•has•an•average•of•48.67
+
+088 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+089 : 
+
+090 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+091 : 0.•Exit
+
+092 : 1.•Generate•a•student•ID
+
+093 : 2.•Capture•marks•for•students
+
+094 : 3.•List•student•IDs•and•average•mark
+
+095 : Goodbye
+
+</pre></p></td><td><p><br>&#10003</p></td><td><p><br>Exact match: 1.88%</p></td></tr></table><hr><h4>Test 209</h4><p>Input data:<pre>1
+
+Kristine Jeffers
+
+2
+
+KJ07tf
+
+25
+
+46
+
+38
+
+n
+
+1
+
+Lenard Osborne
+
+2
+
+LO07ao
+
+26
+
+38
+
+89
+
+n
+
+1
+
+Josephine Moore
+
+2
+
+JM05po
+
+67
+
+34
+
+10
+
+n
+
+1
+
+Dwight Ellington
+
+2
+
+DE09gn
+
+87
+
+35
+
+78
+
+n
+
+1
+
+Winnifred Hardy
+
+2
+
+WH05ir
+
+76
+
+24
+
+98
+
+n
+
+0
+
+
+</pre></p><p>Note that spaces have been replaced with •</p><table><tr><td><p>Program output: <br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : You•entered•a•given•name•of•Kristine•and•a•surname•of•Jeffers
+
+009 : Your•studID•is•KJ07tf
+
+010 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+011 : 0.•Exit
+
+012 : 1.•Generate•a•student•ID
+
+013 : 2.•Capture•marks•for•students
+
+014 : 3.•List•student•IDs•and•average•mark
+
+015 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+016 : Please•enter•mark•1•for•student•KJ07tf
+
+017 : Please•enter•mark•2•for•student•KJ07tf
+
+018 : Please•enter•mark•3•for•student•KJ07tf
+
+019 : Student•KJ07tf•has•a•lowest•mark•of•25
+
+020 : A•highest•mark•of•46
+
+021 : Student•***KJ07tf***•has•an•average•of•36.33
+
+022 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+023 : 
+
+024 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+025 : 0.•Exit
+
+026 : 1.•Generate•a•student•ID
+
+027 : 2.•Capture•marks•for•students
+
+028 : 3.•List•student•IDs•and•average•mark
+
+029 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+030 : You•entered•a•given•name•of•Lenard•and•a•surname•of•Osborne
+
+031 : Your•studID•is•LO07ao
+
+032 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+033 : 0.•Exit
+
+034 : 1.•Generate•a•student•ID
+
+035 : 2.•Capture•marks•for•students
+
+036 : 3.•List•student•IDs•and•average•mark
+
+037 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+038 : Please•enter•mark•1•for•student•LO07ao
+
+039 : Please•enter•mark•2•for•student•LO07ao
+
+040 : Please•enter•mark•3•for•student•LO07ao
+
+041 : Student•LO07ao•has•a•lowest•mark•of•26
+
+042 : A•highest•mark•of•89
+
+043 : Student•***LO07ao***•has•an•average•of•51.00
+
+044 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+045 : 
+
+046 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+047 : 0.•Exit
+
+048 : 1.•Generate•a•student•ID
+
+049 : 2.•Capture•marks•for•students
+
+050 : 3.•List•student•IDs•and•average•mark
+
+051 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+052 : You•entered•a•given•name•of•Josephine•and•a•surname•of•Moore
+
+053 : Your•studID•is•JM05po
+
+054 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+055 : 0.•Exit
+
+056 : 1.•Generate•a•student•ID
+
+057 : 2.•Capture•marks•for•students
+
+058 : 3.•List•student•IDs•and•average•mark
+
+059 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+060 : Please•enter•mark•1•for•student•JM05po
+
+061 : Please•enter•mark•2•for•student•JM05po
+
+062 : Please•enter•mark•3•for•student•JM05po
+
+063 : Student•JM05po•has•a•lowest•mark•of•10
+
+064 : A•highest•mark•of•67
+
+065 : Student•***JM05po***•has•an•average•of•37.00
+
+066 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+067 : 
+
+068 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+069 : 0.•Exit
+
+070 : 1.•Generate•a•student•ID
+
+071 : 2.•Capture•marks•for•students
+
+072 : 3.•List•student•IDs•and•average•mark
+
+073 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+074 : You•entered•a•given•name•of•Dwight•and•a•surname•of•Ellington
+
+075 : Your•studID•is•DE09gn
+
+076 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+077 : 0.•Exit
+
+078 : 1.•Generate•a•student•ID
+
+079 : 2.•Capture•marks•for•students
+
+080 : 3.•List•student•IDs•and•average•mark
+
+081 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+082 : Please•enter•mark•1•for•student•DE09gn
+
+083 : Please•enter•mark•2•for•student•DE09gn
+
+084 : Please•enter•mark•3•for•student•DE09gn
+
+085 : Student•DE09gn•has•a•lowest•mark•of•35
+
+086 : A•highest•mark•of•87
+
+087 : Student•***DE09gn***•has•an•average•of•66.67
+
+088 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+089 : 
+
+090 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+091 : 0.•Exit
+
+092 : 1.•Generate•a•student•ID
+
+093 : 2.•Capture•marks•for•students
+
+094 : 3.•List•student•IDs•and•average•mark
+
+095 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+096 : You•entered•a•given•name•of•Winnifred•and•a•surname•of•Hardy
+
+097 : Your•studID•is•WH05ir
+
+098 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+099 : 0.•Exit
+
+100 : 1.•Generate•a•student•ID
+
+101 : 2.•Capture•marks•for•students
+
+102 : 3.•List•student•IDs•and•average•mark
+
+103 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+104 : Please•enter•mark•1•for•student•WH05ir
+
+105 : Please•enter•mark•2•for•student•WH05ir
+
+106 : Please•enter•mark•3•for•student•WH05ir
+
+107 : Student•WH05ir•has•a•lowest•mark•of•24
+
+108 : A•highest•mark•of•98
+
+109 : Student•***WH05ir***•has•an•average•of•66.00
+
+110 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+111 : 
+
+112 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+113 : 0.•Exit
+
+114 : 1.•Generate•a•student•ID
+
+115 : 2.•Capture•marks•for•students
+
+116 : 3.•List•student•IDs•and•average•mark
+
+117 : Goodbye
+
+</pre></p></td><td><p>Expected output:<br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : You•entered•a•given•name•of•Kristine•and•a•surname•of•Jeffers
+
+009 : Your•studID•is•KJ07tf
+
+010 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+011 : 0.•Exit
+
+012 : 1.•Generate•a•student•ID
+
+013 : 2.•Capture•marks•for•students
+
+014 : 3.•List•student•IDs•and•average•mark
+
+015 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+016 : Please•enter•mark•1•for•student•KJ07tf
+
+017 : Please•enter•mark•2•for•student•KJ07tf
+
+018 : Please•enter•mark•3•for•student•KJ07tf
+
+019 : Student•KJ07tf•has•a•lowest•mark•of•25
+
+020 : A•highest•mark•of•46
+
+021 : Student•***KJ07tf***•has•an•average•of•36.33
+
+022 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+023 : 
+
+024 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+025 : 0.•Exit
+
+026 : 1.•Generate•a•student•ID
+
+027 : 2.•Capture•marks•for•students
+
+028 : 3.•List•student•IDs•and•average•mark
+
+029 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+030 : You•entered•a•given•name•of•Lenard•and•a•surname•of•Osborne
+
+031 : Your•studID•is•LO07ao
+
+032 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+033 : 0.•Exit
+
+034 : 1.•Generate•a•student•ID
+
+035 : 2.•Capture•marks•for•students
+
+036 : 3.•List•student•IDs•and•average•mark
+
+037 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+038 : Please•enter•mark•1•for•student•LO07ao
+
+039 : Please•enter•mark•2•for•student•LO07ao
+
+040 : Please•enter•mark•3•for•student•LO07ao
+
+041 : Student•LO07ao•has•a•lowest•mark•of•26
+
+042 : A•highest•mark•of•89
+
+043 : Student•***LO07ao***•has•an•average•of•51.00
+
+044 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+045 : 
+
+046 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+047 : 0.•Exit
+
+048 : 1.•Generate•a•student•ID
+
+049 : 2.•Capture•marks•for•students
+
+050 : 3.•List•student•IDs•and•average•mark
+
+051 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+052 : You•entered•a•given•name•of•Josephine•and•a•surname•of•Moore
+
+053 : Your•studID•is•JM05po
+
+054 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+055 : 0.•Exit
+
+056 : 1.•Generate•a•student•ID
+
+057 : 2.•Capture•marks•for•students
+
+058 : 3.•List•student•IDs•and•average•mark
+
+059 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+060 : Please•enter•mark•1•for•student•JM05po
+
+061 : Please•enter•mark•2•for•student•JM05po
+
+062 : Please•enter•mark•3•for•student•JM05po
+
+063 : Student•JM05po•has•a•lowest•mark•of•10
+
+064 : A•highest•mark•of•67
+
+065 : Student•***JM05po***•has•an•average•of•37.00
+
+066 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+067 : 
+
+068 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+069 : 0.•Exit
+
+070 : 1.•Generate•a•student•ID
+
+071 : 2.•Capture•marks•for•students
+
+072 : 3.•List•student•IDs•and•average•mark
+
+073 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+074 : You•entered•a•given•name•of•Dwight•and•a•surname•of•Ellington
+
+075 : Your•studID•is•DE09gn
+
+076 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+077 : 0.•Exit
+
+078 : 1.•Generate•a•student•ID
+
+079 : 2.•Capture•marks•for•students
+
+080 : 3.•List•student•IDs•and•average•mark
+
+081 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+082 : Please•enter•mark•1•for•student•DE09gn
+
+083 : Please•enter•mark•2•for•student•DE09gn
+
+084 : Please•enter•mark•3•for•student•DE09gn
+
+085 : Student•DE09gn•has•a•lowest•mark•of•35
+
+086 : A•highest•mark•of•87
+
+087 : Student•***DE09gn***•has•an•average•of•66.67
+
+088 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+089 : 
+
+090 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+091 : 0.•Exit
+
+092 : 1.•Generate•a•student•ID
+
+093 : 2.•Capture•marks•for•students
+
+094 : 3.•List•student•IDs•and•average•mark
+
+095 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+096 : You•entered•a•given•name•of•Winnifred•and•a•surname•of•Hardy
+
+097 : Your•studID•is•WH05ir
+
+098 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+099 : 0.•Exit
+
+100 : 1.•Generate•a•student•ID
+
+101 : 2.•Capture•marks•for•students
+
+102 : 3.•List•student•IDs•and•average•mark
+
+103 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+104 : Please•enter•mark•1•for•student•WH05ir
+
+105 : Please•enter•mark•2•for•student•WH05ir
+
+106 : Please•enter•mark•3•for•student•WH05ir
+
+107 : Student•WH05ir•has•a•lowest•mark•of•24
+
+108 : A•highest•mark•of•98
+
+109 : Student•***WH05ir***•has•an•average•of•66.00
+
+110 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+111 : 
+
+112 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+113 : 0.•Exit
+
+114 : 1.•Generate•a•student•ID
+
+115 : 2.•Capture•marks•for•students
+
+116 : 3.•List•student•IDs•and•average•mark
+
+117 : Goodbye
+
+</pre></p></td><td><p><br>&#10003</p></td><td><p><br>Exact match: 1.88%</p></td></tr></table><hr><h4>Test 210</h4><p>Input data:<pre>1
+
+Scarlett Spencer
+
+2
+
+SS07ln
+
+-3
+
+56
+
+146788
+
+4
+
+101
+
+50
+
+n
+
+0
+
+
+</pre></p><p>Note that spaces have been replaced with •</p><table><tr><td><p>Program output: <br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : You•entered•a•given•name•of•Scarlett•and•a•surname•of•Spencer
+
+009 : Your•studID•is•SS07ln
+
+010 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+011 : 0.•Exit
+
+012 : 1.•Generate•a•student•ID
+
+013 : 2.•Capture•marks•for•students
+
+014 : 3.•List•student•IDs•and•average•mark
+
+015 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+016 : Please•enter•mark•1•for•student•SS07ln
+
+017 : Please•enter•mark•1•for•student•SS07ln
+
+018 : Please•enter•mark•2•for•student•SS07ln
+
+019 : Please•enter•mark•2•for•student•SS07ln
+
+020 : Please•enter•mark•3•for•student•SS07ln
+
+021 : Please•enter•mark•3•for•student•SS07ln
+
+022 : Student•SS07ln•has•a•lowest•mark•of•4
+
+023 : A•highest•mark•of•56
+
+024 : Student•***SS07ln***•has•an•average•of•36.67
+
+025 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+026 : 
+
+027 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+028 : 0.•Exit
+
+029 : 1.•Generate•a•student•ID
+
+030 : 2.•Capture•marks•for•students
+
+031 : 3.•List•student•IDs•and•average•mark
+
+032 : Goodbye
+
+</pre></p></td><td><p>Expected output:<br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : You•entered•a•given•name•of•Scarlett•and•a•surname•of•Spencer
+
+009 : Your•studID•is•SS07ln
+
+010 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+011 : 0.•Exit
+
+012 : 1.•Generate•a•student•ID
+
+013 : 2.•Capture•marks•for•students
+
+014 : 3.•List•student•IDs•and•average•mark
+
+015 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+016 : Please•enter•mark•1•for•student•SS07ln
+
+017 : Please•enter•mark•1•for•student•SS07ln
+
+018 : Please•enter•mark•2•for•student•SS07ln
+
+019 : Please•enter•mark•2•for•student•SS07ln
+
+020 : Please•enter•mark•3•for•student•SS07ln
+
+021 : Please•enter•mark•3•for•student•SS07ln
+
+022 : Student•SS07ln•has•a•lowest•mark•of•4
+
+023 : A•highest•mark•of•56
+
+024 : Student•***SS07ln***•has•an•average•of•36.67
+
+025 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+026 : 
+
+027 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+028 : 0.•Exit
+
+029 : 1.•Generate•a•student•ID
+
+030 : 2.•Capture•marks•for•students
+
+031 : 3.•List•student•IDs•and•average•mark
+
+032 : Goodbye
+
+</pre></p></td><td><p><br>&#10003</p></td><td><p><br>Exact match: 1.88%</p></td></tr></table><hr><h4>Test 211</h4><p>Input data:<pre>1
+
+Roland Gibson
+
+2
+
+RG06as
+
+06
+
+008
+
+060
+
+n
+
+0
+
+
+</pre></p><p>Note that spaces have been replaced with •</p><table><tr><td><p>Program output: <br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : You•entered•a•given•name•of•Roland•and•a•surname•of•Gibson
+
+009 : Your•studID•is•RG06as
+
+010 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+011 : 0.•Exit
+
+012 : 1.•Generate•a•student•ID
+
+013 : 2.•Capture•marks•for•students
+
+014 : 3.•List•student•IDs•and•average•mark
+
+015 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+016 : Please•enter•mark•1•for•student•RG06as
+
+017 : Please•enter•mark•2•for•student•RG06as
+
+018 : Please•enter•mark•3•for•student•RG06as
+
+019 : Student•RG06as•has•a•lowest•mark•of•6
+
+020 : A•highest•mark•of•60
+
+021 : Student•***RG06as***•has•an•average•of•24.67
+
+022 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+023 : 
+
+024 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+025 : 0.•Exit
+
+026 : 1.•Generate•a•student•ID
+
+027 : 2.•Capture•marks•for•students
+
+028 : 3.•List•student•IDs•and•average•mark
+
+029 : Goodbye
+
+</pre></p></td><td><p>Expected output:<br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : You•entered•a•given•name•of•Roland•and•a•surname•of•Gibson
+
+009 : Your•studID•is•RG06as
+
+010 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+011 : 0.•Exit
+
+012 : 1.•Generate•a•student•ID
+
+013 : 2.•Capture•marks•for•students
+
+014 : 3.•List•student•IDs•and•average•mark
+
+015 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+016 : Please•enter•mark•1•for•student•RG06as
+
+017 : Please•enter•mark•2•for•student•RG06as
+
+018 : Please•enter•mark•3•for•student•RG06as
+
+019 : Student•RG06as•has•a•lowest•mark•of•6
+
+020 : A•highest•mark•of•60
+
+021 : Student•***RG06as***•has•an•average•of•24.67
+
+022 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+023 : 
+
+024 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+025 : 0.•Exit
+
+026 : 1.•Generate•a•student•ID
+
+027 : 2.•Capture•marks•for•students
+
+028 : 3.•List•student•IDs•and•average•mark
+
+029 : Goodbye
+
+</pre></p></td><td><p><br>&#10003</p></td><td><p><br>Exact match: 1.88%</p></td></tr></table><hr><h4>Test 212</h4><p>Input data:<pre>1
+
+Errol Noyer
+
+1
+
+Davina Vernon
+
+1
+
+Dennis Parkinson
+
+2
+
+EN05ry
+
+58
+
+36
+
+42
+
+n
+
+2
+
+DP09ni
+
+28
+
+64
+
+25
+
+n
+
+2
+
+DV06in
+
+34
+
+98
+
+75
+
+n
+
+0
+
+
+</pre></p><p>Note that spaces have been replaced with •</p><table><tr><td><p>Program output: <br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : You•entered•a•given•name•of•Errol•and•a•surname•of•Noyer
+
+009 : Your•studID•is•EN05ry
+
+010 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+011 : 0.•Exit
+
+012 : 1.•Generate•a•student•ID
+
+013 : 2.•Capture•marks•for•students
+
+014 : 3.•List•student•IDs•and•average•mark
+
+015 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+016 : You•entered•a•given•name•of•Davina•and•a•surname•of•Vernon
+
+017 : Your•studID•is•DV06in
+
+018 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+019 : 0.•Exit
+
+020 : 1.•Generate•a•student•ID
+
+021 : 2.•Capture•marks•for•students
+
+022 : 3.•List•student•IDs•and•average•mark
+
+023 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+024 : You•entered•a•given•name•of•Dennis•and•a•surname•of•Parkinson
+
+025 : Your•studID•is•DP09ni
+
+026 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+027 : 0.•Exit
+
+028 : 1.•Generate•a•student•ID
+
+029 : 2.•Capture•marks•for•students
+
+030 : 3.•List•student•IDs•and•average•mark
+
+031 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+032 : Please•enter•mark•1•for•student•EN05ry
+
+033 : Please•enter•mark•2•for•student•EN05ry
+
+034 : Please•enter•mark•3•for•student•EN05ry
+
+035 : Student•EN05ry•has•a•lowest•mark•of•36
+
+036 : A•highest•mark•of•58
+
+037 : Student•***EN05ry***•has•an•average•of•45.33
+
+038 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+039 : 
+
+040 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+041 : 0.•Exit
+
+042 : 1.•Generate•a•student•ID
+
+043 : 2.•Capture•marks•for•students
+
+044 : 3.•List•student•IDs•and•average•mark
+
+045 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+046 : Please•enter•mark•1•for•student•DP09ni
+
+047 : Please•enter•mark•2•for•student•DP09ni
+
+048 : Please•enter•mark•3•for•student•DP09ni
+
+049 : Student•DP09ni•has•a•lowest•mark•of•25
+
+050 : A•highest•mark•of•64
+
+051 : Student•***DP09ni***•has•an•average•of•39.00
+
+052 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+053 : 
+
+054 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+055 : 0.•Exit
+
+056 : 1.•Generate•a•student•ID
+
+057 : 2.•Capture•marks•for•students
+
+058 : 3.•List•student•IDs•and•average•mark
+
+059 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+060 : Please•enter•mark•1•for•student•DV06in
+
+061 : Please•enter•mark•2•for•student•DV06in
+
+062 : Please•enter•mark•3•for•student•DV06in
+
+063 : Student•DV06in•has•a•lowest•mark•of•34
+
+064 : A•highest•mark•of•98
+
+065 : Student•***DV06in***•has•an•average•of•69.00
+
+066 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+067 : 
+
+068 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+069 : 0.•Exit
+
+070 : 1.•Generate•a•student•ID
+
+071 : 2.•Capture•marks•for•students
+
+072 : 3.•List•student•IDs•and•average•mark
+
+073 : Goodbye
+
+</pre></p></td><td><p>Expected output:<br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : You•entered•a•given•name•of•Errol•and•a•surname•of•Noyer
+
+009 : Your•studID•is•EN05ry
+
+010 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+011 : 0.•Exit
+
+012 : 1.•Generate•a•student•ID
+
+013 : 2.•Capture•marks•for•students
+
+014 : 3.•List•student•IDs•and•average•mark
+
+015 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+016 : You•entered•a•given•name•of•Davina•and•a•surname•of•Vernon
+
+017 : Your•studID•is•DV06in
+
+018 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+019 : 0.•Exit
+
+020 : 1.•Generate•a•student•ID
+
+021 : 2.•Capture•marks•for•students
+
+022 : 3.•List•student•IDs•and•average•mark
+
+023 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+024 : You•entered•a•given•name•of•Dennis•and•a•surname•of•Parkinson
+
+025 : Your•studID•is•DP09ni
+
+026 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+027 : 0.•Exit
+
+028 : 1.•Generate•a•student•ID
+
+029 : 2.•Capture•marks•for•students
+
+030 : 3.•List•student•IDs•and•average•mark
+
+031 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+032 : Please•enter•mark•1•for•student•EN05ry
+
+033 : Please•enter•mark•2•for•student•EN05ry
+
+034 : Please•enter•mark•3•for•student•EN05ry
+
+035 : Student•EN05ry•has•a•lowest•mark•of•36
+
+036 : A•highest•mark•of•58
+
+037 : Student•***EN05ry***•has•an•average•of•45.33
+
+038 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+039 : 
+
+040 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+041 : 0.•Exit
+
+042 : 1.•Generate•a•student•ID
+
+043 : 2.•Capture•marks•for•students
+
+044 : 3.•List•student•IDs•and•average•mark
+
+045 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+046 : Please•enter•mark•1•for•student•DP09ni
+
+047 : Please•enter•mark•2•for•student•DP09ni
+
+048 : Please•enter•mark•3•for•student•DP09ni
+
+049 : Student•DP09ni•has•a•lowest•mark•of•25
+
+050 : A•highest•mark•of•64
+
+051 : Student•***DP09ni***•has•an•average•of•39.00
+
+052 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+053 : 
+
+054 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+055 : 0.•Exit
+
+056 : 1.•Generate•a•student•ID
+
+057 : 2.•Capture•marks•for•students
+
+058 : 3.•List•student•IDs•and•average•mark
+
+059 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+060 : Please•enter•mark•1•for•student•DV06in
+
+061 : Please•enter•mark•2•for•student•DV06in
+
+062 : Please•enter•mark•3•for•student•DV06in
+
+063 : Student•DV06in•has•a•lowest•mark•of•34
+
+064 : A•highest•mark•of•98
+
+065 : Student•***DV06in***•has•an•average•of•69.00
+
+066 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+067 : 
+
+068 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+069 : 0.•Exit
+
+070 : 1.•Generate•a•student•ID
+
+071 : 2.•Capture•marks•for•students
+
+072 : 3.•List•student•IDs•and•average•mark
+
+073 : Goodbye
+
+</pre></p></td><td><p><br>&#10003</p></td><td><p><br>Exact match: 1.88%</p></td></tr></table><hr></div><div class="tab-pane fade" id="v-pills-q6" role="tabpanel" aria-labelledby="v-pills-q6-tab"><h3>Question 6 - Marks: 20/20</h3><h4>Test 213</h4><p>Input data:<pre>1
+
+Kate Jordan
+
+2
+
+KJ06td
+
+9
+
+5
+
+2
+
+y
+
+0
+
+
+</pre></p><p>Note that spaces have been replaced with •</p><table><tr><td><p>Program output: <br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : You•entered•a•given•name•of•Kate•and•a•surname•of•Jordan
+
+009 : Your•studID•is•KJ06td
+
+010 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+011 : 0.•Exit
+
+012 : 1.•Generate•a•student•ID
+
+013 : 2.•Capture•marks•for•students
+
+014 : 3.•List•student•IDs•and•average•mark
+
+015 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+016 : Please•enter•mark•1•for•student•KJ06td
+
+017 : Please•enter•mark•2•for•student•KJ06td
+
+018 : Please•enter•mark•3•for•student•KJ06td
+
+019 : Student•KJ06td•has•a•lowest•mark•of•2
+
+020 : A•highest•mark•of•9
+
+021 : Student•***KJ06td***•has•an•average•of••5.33
+
+022 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+023 : Student•id•statistics:•KJ06td
+
+024 : •••*
+
+025 : •••*
+
+026 : •••*
+
+027 : •••*
+
+028 : •••*
+
+029 : •••*
+
+030 : •••*
+
+031 : •••*•••••••••••*
+
+032 : •••*•••••••••••*
+
+033 : Highest•••••Lowest
+
+034 : •••9•••••••••••2
+
+035 : 
+
+036 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+037 : 0.•Exit
+
+038 : 1.•Generate•a•student•ID
+
+039 : 2.•Capture•marks•for•students
+
+040 : 3.•List•student•IDs•and•average•mark
+
+041 : Goodbye
+
+</pre></p></td><td><p>Expected output:<br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : You•entered•a•given•name•of•Kate•and•a•surname•of•Jordan
+
+009 : Your•studID•is•KJ06td
+
+010 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+011 : 0.•Exit
+
+012 : 1.•Generate•a•student•ID
+
+013 : 2.•Capture•marks•for•students
+
+014 : 3.•List•student•IDs•and•average•mark
+
+015 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+016 : Please•enter•mark•1•for•student•KJ06td
+
+017 : Please•enter•mark•2•for•student•KJ06td
+
+018 : Please•enter•mark•3•for•student•KJ06td
+
+019 : Student•KJ06td•has•a•lowest•mark•of•2
+
+020 : A•highest•mark•of•9
+
+021 : Student•***KJ06td***•has•an•average•of••5.33
+
+022 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+023 : Student•id•statistics:•KJ06td
+
+024 : •••*
+
+025 : •••*
+
+026 : •••*
+
+027 : •••*
+
+028 : •••*
+
+029 : •••*
+
+030 : •••*
+
+031 : •••*•••••••••••*
+
+032 : •••*•••••••••••*
+
+033 : Highest•••••Lowest
+
+034 : •••9•••••••••••2
+
+035 : 
+
+036 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+037 : 0.•Exit
+
+038 : 1.•Generate•a•student•ID
+
+039 : 2.•Capture•marks•for•students
+
+040 : 3.•List•student•IDs•and•average•mark
+
+041 : Goodbye
+
+</pre></p></td><td><p><br>&#10003</p></td><td><p><br>Exact match: 5.00%</p></td></tr></table><hr><h4>Test 214</h4><p>Input data:<pre>1
+
+Amberly Colt
+
+2
+
+AC04el
+
+3
+
+6
+
+8
+
+y
+
+0
+
+
+</pre></p><p>Note that spaces have been replaced with •</p><table><tr><td><p>Program output: <br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : You•entered•a•given•name•of•Amberly•and•a•surname•of•Colt
+
+009 : Your•studID•is•AC04el
+
+010 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+011 : 0.•Exit
+
+012 : 1.•Generate•a•student•ID
+
+013 : 2.•Capture•marks•for•students
+
+014 : 3.•List•student•IDs•and•average•mark
+
+015 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+016 : Please•enter•mark•1•for•student•AC04el
+
+017 : Please•enter•mark•2•for•student•AC04el
+
+018 : Please•enter•mark•3•for•student•AC04el
+
+019 : Student•AC04el•has•a•lowest•mark•of•3
+
+020 : A•highest•mark•of•8
+
+021 : Student•***AC04el***•has•an•average•of••5.67
+
+022 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+023 : Student•id•statistics:•AC04el
+
+024 : •••*
+
+025 : •••*
+
+026 : •••*
+
+027 : •••*
+
+028 : •••*
+
+029 : •••*•••••••••••*
+
+030 : •••*•••••••••••*
+
+031 : •••*•••••••••••*
+
+032 : Highest•••••Lowest
+
+033 : •••8•••••••••••3
+
+034 : 
+
+035 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+036 : 0.•Exit
+
+037 : 1.•Generate•a•student•ID
+
+038 : 2.•Capture•marks•for•students
+
+039 : 3.•List•student•IDs•and•average•mark
+
+040 : Goodbye
+
+</pre></p></td><td><p>Expected output:<br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : You•entered•a•given•name•of•Amberly•and•a•surname•of•Colt
+
+009 : Your•studID•is•AC04el
+
+010 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+011 : 0.•Exit
+
+012 : 1.•Generate•a•student•ID
+
+013 : 2.•Capture•marks•for•students
+
+014 : 3.•List•student•IDs•and•average•mark
+
+015 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+016 : Please•enter•mark•1•for•student•AC04el
+
+017 : Please•enter•mark•2•for•student•AC04el
+
+018 : Please•enter•mark•3•for•student•AC04el
+
+019 : Student•AC04el•has•a•lowest•mark•of•3
+
+020 : A•highest•mark•of•8
+
+021 : Student•***AC04el***•has•an•average•of••5.67
+
+022 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+023 : Student•id•statistics:•AC04el
+
+024 : •••*
+
+025 : •••*
+
+026 : •••*
+
+027 : •••*
+
+028 : •••*
+
+029 : •••*•••••••••••*
+
+030 : •••*•••••••••••*
+
+031 : •••*•••••••••••*
+
+032 : Highest•••••Lowest
+
+033 : •••8•••••••••••3
+
+034 : 
+
+035 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+036 : 0.•Exit
+
+037 : 1.•Generate•a•student•ID
+
+038 : 2.•Capture•marks•for•students
+
+039 : 3.•List•student•IDs•and•average•mark
+
+040 : Goodbye
+
+</pre></p></td><td><p><br>&#10003</p></td><td><p><br>Exact match: 5.00%</p></td></tr></table><hr><h4>Test 215</h4><p>Input data:<pre>1
+
+Jake Rodgers
+
+2
+
+JR07kg
+
+7
+
+3
+
+5
+
+y
+
+0
+
+
+</pre></p><p>Note that spaces have been replaced with •</p><table><tr><td><p>Program output: <br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : You•entered•a•given•name•of•Jake•and•a•surname•of•Rodgers
+
+009 : Your•studID•is•JR07kg
+
+010 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+011 : 0.•Exit
+
+012 : 1.•Generate•a•student•ID
+
+013 : 2.•Capture•marks•for•students
+
+014 : 3.•List•student•IDs•and•average•mark
+
+015 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+016 : Please•enter•mark•1•for•student•JR07kg
+
+017 : Please•enter•mark•2•for•student•JR07kg
+
+018 : Please•enter•mark•3•for•student•JR07kg
+
+019 : Student•JR07kg•has•a•lowest•mark•of•3
+
+020 : A•highest•mark•of•7
+
+021 : Student•***JR07kg***•has•an•average•of••5.00
+
+022 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+023 : Student•id•statistics:•JR07kg
+
+024 : •••*
+
+025 : •••*
+
+026 : •••*
+
+027 : •••*
+
+028 : •••*•••••••••••*
+
+029 : •••*•••••••••••*
+
+030 : •••*•••••••••••*
+
+031 : Highest•••••Lowest
+
+032 : •••7•••••••••••3
+
+033 : 
+
+034 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+035 : 0.•Exit
+
+036 : 1.•Generate•a•student•ID
+
+037 : 2.•Capture•marks•for•students
+
+038 : 3.•List•student•IDs•and•average•mark
+
+039 : Goodbye
+
+</pre></p></td><td><p>Expected output:<br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : You•entered•a•given•name•of•Jake•and•a•surname•of•Rodgers
+
+009 : Your•studID•is•JR07kg
+
+010 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+011 : 0.•Exit
+
+012 : 1.•Generate•a•student•ID
+
+013 : 2.•Capture•marks•for•students
+
+014 : 3.•List•student•IDs•and•average•mark
+
+015 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+016 : Please•enter•mark•1•for•student•JR07kg
+
+017 : Please•enter•mark•2•for•student•JR07kg
+
+018 : Please•enter•mark•3•for•student•JR07kg
+
+019 : Student•JR07kg•has•a•lowest•mark•of•3
+
+020 : A•highest•mark•of•7
+
+021 : Student•***JR07kg***•has•an•average•of••5.00
+
+022 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+023 : Student•id•statistics:•JR07kg
+
+024 : •••*
+
+025 : •••*
+
+026 : •••*
+
+027 : •••*
+
+028 : •••*•••••••••••*
+
+029 : •••*•••••••••••*
+
+030 : •••*•••••••••••*
+
+031 : Highest•••••Lowest
+
+032 : •••7•••••••••••3
+
+033 : 
+
+034 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+035 : 0.•Exit
+
+036 : 1.•Generate•a•student•ID
+
+037 : 2.•Capture•marks•for•students
+
+038 : 3.•List•student•IDs•and•average•mark
+
+039 : Goodbye
+
+</pre></p></td><td><p><br>&#10003</p></td><td><p><br>Exact match: 5.00%</p></td></tr></table><hr><h4>Test 216</h4><p>Input data:<pre>1
+
+Judie Crewe
+
+2
+
+JC05de
+
+24
+
+100
+
+58
+
+y
+
+0
+
+
+</pre></p><p>Note that spaces have been replaced with •</p><table><tr><td><p>Program output: <br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : You•entered•a•given•name•of•Judie•and•a•surname•of•Crewe
+
+009 : Your•studID•is•JC05de
+
+010 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+011 : 0.•Exit
+
+012 : 1.•Generate•a•student•ID
+
+013 : 2.•Capture•marks•for•students
+
+014 : 3.•List•student•IDs•and•average•mark
+
+015 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+016 : Please•enter•mark•1•for•student•JC05de
+
+017 : Please•enter•mark•2•for•student•JC05de
+
+018 : Please•enter•mark•3•for•student•JC05de
+
+019 : Student•JC05de•has•a•lowest•mark•of•24
+
+020 : A•highest•mark•of•100
+
+021 : Student•***JC05de***•has•an•average•of•60.67
+
+022 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+023 : Student•id•statistics:•JC05de
+
+024 : •••*
+
+025 : •••*
+
+026 : •••*
+
+027 : •••*
+
+028 : •••*
+
+029 : •••*
+
+030 : •••*
+
+031 : •••*
+
+032 : •••*
+
+033 : •••*
+
+034 : •••*
+
+035 : •••*
+
+036 : •••*
+
+037 : •••*
+
+038 : •••*
+
+039 : •••*
+
+040 : •••*
+
+041 : •••*
+
+042 : •••*
+
+043 : •••*
+
+044 : •••*
+
+045 : •••*
+
+046 : •••*
+
+047 : •••*
+
+048 : •••*
+
+049 : •••*
+
+050 : •••*
+
+051 : •••*
+
+052 : •••*
+
+053 : •••*
+
+054 : •••*
+
+055 : •••*
+
+056 : •••*
+
+057 : •••*
+
+058 : •••*
+
+059 : •••*
+
+060 : •••*
+
+061 : •••*
+
+062 : •••*
+
+063 : •••*
+
+064 : •••*
+
+065 : •••*
+
+066 : •••*
+
+067 : •••*
+
+068 : •••*
+
+069 : •••*
+
+070 : •••*
+
+071 : •••*
+
+072 : •••*
+
+073 : •••*
+
+074 : •••*
+
+075 : •••*
+
+076 : •••*
+
+077 : •••*
+
+078 : •••*
+
+079 : •••*
+
+080 : •••*
+
+081 : •••*
+
+082 : •••*
+
+083 : •••*
+
+084 : •••*
+
+085 : •••*
+
+086 : •••*
+
+087 : •••*
+
+088 : •••*
+
+089 : •••*
+
+090 : •••*
+
+091 : •••*
+
+092 : •••*
+
+093 : •••*
+
+094 : •••*
+
+095 : •••*
+
+096 : •••*
+
+097 : •••*
+
+098 : •••*
+
+099 : •••*
+
+100 : •••*•••••••••••*
+
+101 : •••*•••••••••••*
+
+102 : •••*•••••••••••*
+
+103 : •••*•••••••••••*
+
+104 : •••*•••••••••••*
+
+105 : •••*•••••••••••*
+
+106 : •••*•••••••••••*
+
+107 : •••*•••••••••••*
+
+108 : •••*•••••••••••*
+
+109 : •••*•••••••••••*
+
+110 : •••*•••••••••••*
+
+111 : •••*•••••••••••*
+
+112 : •••*•••••••••••*
+
+113 : •••*•••••••••••*
+
+114 : •••*•••••••••••*
+
+115 : •••*•••••••••••*
+
+116 : •••*•••••••••••*
+
+117 : •••*•••••••••••*
+
+118 : •••*•••••••••••*
+
+119 : •••*•••••••••••*
+
+120 : •••*•••••••••••*
+
+121 : •••*•••••••••••*
+
+122 : •••*•••••••••••*
+
+123 : •••*•••••••••••*
+
+124 : Highest•••••Lowest
+
+125 : •100••••••••••24
+
+126 : 
+
+127 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+128 : 0.•Exit
+
+129 : 1.•Generate•a•student•ID
+
+130 : 2.•Capture•marks•for•students
+
+131 : 3.•List•student•IDs•and•average•mark
+
+132 : Goodbye
+
+</pre></p></td><td><p>Expected output:<br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : You•entered•a•given•name•of•Judie•and•a•surname•of•Crewe
+
+009 : Your•studID•is•JC05de
+
+010 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+011 : 0.•Exit
+
+012 : 1.•Generate•a•student•ID
+
+013 : 2.•Capture•marks•for•students
+
+014 : 3.•List•student•IDs•and•average•mark
+
+015 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+016 : Please•enter•mark•1•for•student•JC05de
+
+017 : Please•enter•mark•2•for•student•JC05de
+
+018 : Please•enter•mark•3•for•student•JC05de
+
+019 : Student•JC05de•has•a•lowest•mark•of•24
+
+020 : A•highest•mark•of•100
+
+021 : Student•***JC05de***•has•an•average•of•60.67
+
+022 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+023 : Student•id•statistics:•JC05de
+
+024 : •••*
+
+025 : •••*
+
+026 : •••*
+
+027 : •••*
+
+028 : •••*
+
+029 : •••*
+
+030 : •••*
+
+031 : •••*
+
+032 : •••*
+
+033 : •••*
+
+034 : •••*
+
+035 : •••*
+
+036 : •••*
+
+037 : •••*
+
+038 : •••*
+
+039 : •••*
+
+040 : •••*
+
+041 : •••*
+
+042 : •••*
+
+043 : •••*
+
+044 : •••*
+
+045 : •••*
+
+046 : •••*
+
+047 : •••*
+
+048 : •••*
+
+049 : •••*
+
+050 : •••*
+
+051 : •••*
+
+052 : •••*
+
+053 : •••*
+
+054 : •••*
+
+055 : •••*
+
+056 : •••*
+
+057 : •••*
+
+058 : •••*
+
+059 : •••*
+
+060 : •••*
+
+061 : •••*
+
+062 : •••*
+
+063 : •••*
+
+064 : •••*
+
+065 : •••*
+
+066 : •••*
+
+067 : •••*
+
+068 : •••*
+
+069 : •••*
+
+070 : •••*
+
+071 : •••*
+
+072 : •••*
+
+073 : •••*
+
+074 : •••*
+
+075 : •••*
+
+076 : •••*
+
+077 : •••*
+
+078 : •••*
+
+079 : •••*
+
+080 : •••*
+
+081 : •••*
+
+082 : •••*
+
+083 : •••*
+
+084 : •••*
+
+085 : •••*
+
+086 : •••*
+
+087 : •••*
+
+088 : •••*
+
+089 : •••*
+
+090 : •••*
+
+091 : •••*
+
+092 : •••*
+
+093 : •••*
+
+094 : •••*
+
+095 : •••*
+
+096 : •••*
+
+097 : •••*
+
+098 : •••*
+
+099 : •••*
+
+100 : •••*•••••••••••*
+
+101 : •••*•••••••••••*
+
+102 : •••*•••••••••••*
+
+103 : •••*•••••••••••*
+
+104 : •••*•••••••••••*
+
+105 : •••*•••••••••••*
+
+106 : •••*•••••••••••*
+
+107 : •••*•••••••••••*
+
+108 : •••*•••••••••••*
+
+109 : •••*•••••••••••*
+
+110 : •••*•••••••••••*
+
+111 : •••*•••••••••••*
+
+112 : •••*•••••••••••*
+
+113 : •••*•••••••••••*
+
+114 : •••*•••••••••••*
+
+115 : •••*•••••••••••*
+
+116 : •••*•••••••••••*
+
+117 : •••*•••••••••••*
+
+118 : •••*•••••••••••*
+
+119 : •••*•••••••••••*
+
+120 : •••*•••••••••••*
+
+121 : •••*•••••••••••*
+
+122 : •••*•••••••••••*
+
+123 : •••*•••••••••••*
+
+124 : Highest•••••Lowest
+
+125 : •100••••••••••24
+
+126 : 
+
+127 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+128 : 0.•Exit
+
+129 : 1.•Generate•a•student•ID
+
+130 : 2.•Capture•marks•for•students
+
+131 : 3.•List•student•IDs•and•average•mark
+
+132 : Goodbye
+
+</pre></p></td><td><p><br>&#10003</p></td><td><p><br>Exact match: 5.00%</p></td></tr></table><hr></div><div class="tab-pane fade" id="v-pills-q7" role="tabpanel" aria-labelledby="v-pills-q7-tab"><h3>Question 7 - Marks: 10/10</h3><h4>Test 309</h4><p>Input data:<pre>1
+
+Floyd Meadows
+
+2
+
+FM07od
+
+45
+
+63
+
+56
+
+n
+
+3
+
+0
+
+
+</pre></p><p>Note that spaces have been replaced with •</p><table><tr><td><p>Program output: <br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : You•entered•a•given•name•of•Floyd•and•a•surname•of•Meadows
+
+009 : Your•studID•is•FM07od
+
+010 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+011 : 0.•Exit
+
+012 : 1.•Generate•a•student•ID
+
+013 : 2.•Capture•marks•for•students
+
+014 : 3.•List•student•IDs•and•average•mark
+
+015 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+016 : Please•enter•mark•1•for•student•FM07od
+
+017 : Please•enter•mark•2•for•student•FM07od
+
+018 : Please•enter•mark•3•for•student•FM07od
+
+019 : Student•FM07od•has•a•lowest•mark•of•45
+
+020 : A•highest•mark•of•63
+
+021 : Student•***FM07od***•has•an•average•of•54.67
+
+022 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+023 : 
+
+024 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+025 : 0.•Exit
+
+026 : 1.•Generate•a•student•ID
+
+027 : 2.•Capture•marks•for•students
+
+028 : 3.•List•student•IDs•and•average•mark
+
+029 : |•Student•ID•••1•is•FM07od•|•Average•is•54.67•|
+
+030 : 
+
+031 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+032 : 0.•Exit
+
+033 : 1.•Generate•a•student•ID
+
+034 : 2.•Capture•marks•for•students
+
+035 : 3.•List•student•IDs•and•average•mark
+
+036 : Goodbye
+
+</pre></p></td><td><p>Expected output:<br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : You•entered•a•given•name•of•Floyd•and•a•surname•of•Meadows
+
+009 : Your•studID•is•FM07od
+
+010 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+011 : 0.•Exit
+
+012 : 1.•Generate•a•student•ID
+
+013 : 2.•Capture•marks•for•students
+
+014 : 3.•List•student•IDs•and•average•mark
+
+015 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+016 : Please•enter•mark•1•for•student•FM07od
+
+017 : Please•enter•mark•2•for•student•FM07od
+
+018 : Please•enter•mark•3•for•student•FM07od
+
+019 : Student•FM07od•has•a•lowest•mark•of•45
+
+020 : A•highest•mark•of•63
+
+021 : Student•***FM07od***•has•an•average•of•54.67
+
+022 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+023 : 
+
+024 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+025 : 0.•Exit
+
+026 : 1.•Generate•a•student•ID
+
+027 : 2.•Capture•marks•for•students
+
+028 : 3.•List•student•IDs•and•average•mark
+
+029 : |•Student•ID•••1•is•FM07od•|•Average•is•54.67•|
+
+030 : 
+
+031 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+032 : 0.•Exit
+
+033 : 1.•Generate•a•student•ID
+
+034 : 2.•Capture•marks•for•students
+
+035 : 3.•List•student•IDs•and•average•mark
+
+036 : Goodbye
+
+</pre></p></td><td><p><br>&#10003</p></td><td><p><br>Exact match: 1.43%</p></td></tr></table><hr><h4>Test 310</h4><p>Input data:<pre>1
+
+Clair Lucas
+
+2
+
+CL05ac
+
+57
+
+34
+
+75
+
+n
+
+1
+
+Dudley Waterman
+
+2
+
+DW08lr
+
+6
+
+10
+
+78
+
+n
+
+3
+
+0
+
+
+</pre></p><p>Note that spaces have been replaced with •</p><table><tr><td><p>Program output: <br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : You•entered•a•given•name•of•Clair•and•a•surname•of•Lucas
+
+009 : Your•studID•is•CL05ac
+
+010 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+011 : 0.•Exit
+
+012 : 1.•Generate•a•student•ID
+
+013 : 2.•Capture•marks•for•students
+
+014 : 3.•List•student•IDs•and•average•mark
+
+015 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+016 : Please•enter•mark•1•for•student•CL05ac
+
+017 : Please•enter•mark•2•for•student•CL05ac
+
+018 : Please•enter•mark•3•for•student•CL05ac
+
+019 : Student•CL05ac•has•a•lowest•mark•of•34
+
+020 : A•highest•mark•of•75
+
+021 : Student•***CL05ac***•has•an•average•of•55.33
+
+022 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+023 : 
+
+024 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+025 : 0.•Exit
+
+026 : 1.•Generate•a•student•ID
+
+027 : 2.•Capture•marks•for•students
+
+028 : 3.•List•student•IDs•and•average•mark
+
+029 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+030 : You•entered•a•given•name•of•Dudley•and•a•surname•of•Waterman
+
+031 : Your•studID•is•DW08lr
+
+032 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+033 : 0.•Exit
+
+034 : 1.•Generate•a•student•ID
+
+035 : 2.•Capture•marks•for•students
+
+036 : 3.•List•student•IDs•and•average•mark
+
+037 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+038 : Please•enter•mark•1•for•student•DW08lr
+
+039 : Please•enter•mark•2•for•student•DW08lr
+
+040 : Please•enter•mark•3•for•student•DW08lr
+
+041 : Student•DW08lr•has•a•lowest•mark•of•6
+
+042 : A•highest•mark•of•78
+
+043 : Student•***DW08lr***•has•an•average•of•31.33
+
+044 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+045 : 
+
+046 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+047 : 0.•Exit
+
+048 : 1.•Generate•a•student•ID
+
+049 : 2.•Capture•marks•for•students
+
+050 : 3.•List•student•IDs•and•average•mark
+
+051 : |•Student•ID•••1•is•CL05ac•|•Average•is•55.33•|
+
+052 : |•Student•ID•••2•is•DW08lr•|•Average•is•31.33•|
+
+053 : 
+
+054 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+055 : 0.•Exit
+
+056 : 1.•Generate•a•student•ID
+
+057 : 2.•Capture•marks•for•students
+
+058 : 3.•List•student•IDs•and•average•mark
+
+059 : Goodbye
+
+</pre></p></td><td><p>Expected output:<br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : You•entered•a•given•name•of•Clair•and•a•surname•of•Lucas
+
+009 : Your•studID•is•CL05ac
+
+010 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+011 : 0.•Exit
+
+012 : 1.•Generate•a•student•ID
+
+013 : 2.•Capture•marks•for•students
+
+014 : 3.•List•student•IDs•and•average•mark
+
+015 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+016 : Please•enter•mark•1•for•student•CL05ac
+
+017 : Please•enter•mark•2•for•student•CL05ac
+
+018 : Please•enter•mark•3•for•student•CL05ac
+
+019 : Student•CL05ac•has•a•lowest•mark•of•34
+
+020 : A•highest•mark•of•75
+
+021 : Student•***CL05ac***•has•an•average•of•55.33
+
+022 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+023 : 
+
+024 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+025 : 0.•Exit
+
+026 : 1.•Generate•a•student•ID
+
+027 : 2.•Capture•marks•for•students
+
+028 : 3.•List•student•IDs•and•average•mark
+
+029 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+030 : You•entered•a•given•name•of•Dudley•and•a•surname•of•Waterman
+
+031 : Your•studID•is•DW08lr
+
+032 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+033 : 0.•Exit
+
+034 : 1.•Generate•a•student•ID
+
+035 : 2.•Capture•marks•for•students
+
+036 : 3.•List•student•IDs•and•average•mark
+
+037 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+038 : Please•enter•mark•1•for•student•DW08lr
+
+039 : Please•enter•mark•2•for•student•DW08lr
+
+040 : Please•enter•mark•3•for•student•DW08lr
+
+041 : Student•DW08lr•has•a•lowest•mark•of•6
+
+042 : A•highest•mark•of•78
+
+043 : Student•***DW08lr***•has•an•average•of•31.33
+
+044 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+045 : 
+
+046 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+047 : 0.•Exit
+
+048 : 1.•Generate•a•student•ID
+
+049 : 2.•Capture•marks•for•students
+
+050 : 3.•List•student•IDs•and•average•mark
+
+051 : |•Student•ID•••1•is•CL05ac•|•Average•is•55.33•|
+
+052 : |•Student•ID•••2•is•DW08lr•|•Average•is•31.33•|
+
+053 : 
+
+054 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+055 : 0.•Exit
+
+056 : 1.•Generate•a•student•ID
+
+057 : 2.•Capture•marks•for•students
+
+058 : 3.•List•student•IDs•and•average•mark
+
+059 : Goodbye
+
+</pre></p></td><td><p><br>&#10003</p></td><td><p><br>Exact match: 1.43%</p></td></tr></table><hr><h4>Test 311</h4><p>Input data:<pre>1
+
+Madeline Lucas
+
+2
+
+ML05lc
+
+56
+
+85
+
+16
+
+n
+
+1
+
+Phillis Ayers
+
+2
+
+PA05le
+
+36
+
+25
+
+84
+
+n
+
+1
+
+Clair Durant
+
+2
+
+CD06aa
+
+45
+
+78
+
+35
+
+n
+
+3
+
+0
+
+
+</pre></p><p>Note that spaces have been replaced with •</p><table><tr><td><p>Program output: <br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : You•entered•a•given•name•of•Madeline•and•a•surname•of•Lucas
+
+009 : Your•studID•is•ML05lc
+
+010 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+011 : 0.•Exit
+
+012 : 1.•Generate•a•student•ID
+
+013 : 2.•Capture•marks•for•students
+
+014 : 3.•List•student•IDs•and•average•mark
+
+015 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+016 : Please•enter•mark•1•for•student•ML05lc
+
+017 : Please•enter•mark•2•for•student•ML05lc
+
+018 : Please•enter•mark•3•for•student•ML05lc
+
+019 : Student•ML05lc•has•a•lowest•mark•of•16
+
+020 : A•highest•mark•of•85
+
+021 : Student•***ML05lc***•has•an•average•of•52.33
+
+022 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+023 : 
+
+024 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+025 : 0.•Exit
+
+026 : 1.•Generate•a•student•ID
+
+027 : 2.•Capture•marks•for•students
+
+028 : 3.•List•student•IDs•and•average•mark
+
+029 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+030 : You•entered•a•given•name•of•Phillis•and•a•surname•of•Ayers
+
+031 : Your•studID•is•PA05le
+
+032 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+033 : 0.•Exit
+
+034 : 1.•Generate•a•student•ID
+
+035 : 2.•Capture•marks•for•students
+
+036 : 3.•List•student•IDs•and•average•mark
+
+037 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+038 : Please•enter•mark•1•for•student•PA05le
+
+039 : Please•enter•mark•2•for•student•PA05le
+
+040 : Please•enter•mark•3•for•student•PA05le
+
+041 : Student•PA05le•has•a•lowest•mark•of•25
+
+042 : A•highest•mark•of•84
+
+043 : Student•***PA05le***•has•an•average•of•48.33
+
+044 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+045 : 
+
+046 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+047 : 0.•Exit
+
+048 : 1.•Generate•a•student•ID
+
+049 : 2.•Capture•marks•for•students
+
+050 : 3.•List•student•IDs•and•average•mark
+
+051 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+052 : You•entered•a•given•name•of•Clair•and•a•surname•of•Durant
+
+053 : Your•studID•is•CD06aa
+
+054 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+055 : 0.•Exit
+
+056 : 1.•Generate•a•student•ID
+
+057 : 2.•Capture•marks•for•students
+
+058 : 3.•List•student•IDs•and•average•mark
+
+059 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+060 : Please•enter•mark•1•for•student•CD06aa
+
+061 : Please•enter•mark•2•for•student•CD06aa
+
+062 : Please•enter•mark•3•for•student•CD06aa
+
+063 : Student•CD06aa•has•a•lowest•mark•of•35
+
+064 : A•highest•mark•of•78
+
+065 : Student•***CD06aa***•has•an•average•of•52.67
+
+066 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+067 : 
+
+068 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+069 : 0.•Exit
+
+070 : 1.•Generate•a•student•ID
+
+071 : 2.•Capture•marks•for•students
+
+072 : 3.•List•student•IDs•and•average•mark
+
+073 : |•Student•ID•••1•is•ML05lc•|•Average•is•52.33•|
+
+074 : |•Student•ID•••2•is•PA05le•|•Average•is•48.33•|
+
+075 : |•Student•ID•••3•is•CD06aa•|•Average•is•52.67•|
+
+076 : 
+
+077 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+078 : 0.•Exit
+
+079 : 1.•Generate•a•student•ID
+
+080 : 2.•Capture•marks•for•students
+
+081 : 3.•List•student•IDs•and•average•mark
+
+082 : Goodbye
+
+</pre></p></td><td><p>Expected output:<br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : You•entered•a•given•name•of•Madeline•and•a•surname•of•Lucas
+
+009 : Your•studID•is•ML05lc
+
+010 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+011 : 0.•Exit
+
+012 : 1.•Generate•a•student•ID
+
+013 : 2.•Capture•marks•for•students
+
+014 : 3.•List•student•IDs•and•average•mark
+
+015 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+016 : Please•enter•mark•1•for•student•ML05lc
+
+017 : Please•enter•mark•2•for•student•ML05lc
+
+018 : Please•enter•mark•3•for•student•ML05lc
+
+019 : Student•ML05lc•has•a•lowest•mark•of•16
+
+020 : A•highest•mark•of•85
+
+021 : Student•***ML05lc***•has•an•average•of•52.33
+
+022 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+023 : 
+
+024 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+025 : 0.•Exit
+
+026 : 1.•Generate•a•student•ID
+
+027 : 2.•Capture•marks•for•students
+
+028 : 3.•List•student•IDs•and•average•mark
+
+029 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+030 : You•entered•a•given•name•of•Phillis•and•a•surname•of•Ayers
+
+031 : Your•studID•is•PA05le
+
+032 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+033 : 0.•Exit
+
+034 : 1.•Generate•a•student•ID
+
+035 : 2.•Capture•marks•for•students
+
+036 : 3.•List•student•IDs•and•average•mark
+
+037 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+038 : Please•enter•mark•1•for•student•PA05le
+
+039 : Please•enter•mark•2•for•student•PA05le
+
+040 : Please•enter•mark•3•for•student•PA05le
+
+041 : Student•PA05le•has•a•lowest•mark•of•25
+
+042 : A•highest•mark•of•84
+
+043 : Student•***PA05le***•has•an•average•of•48.33
+
+044 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+045 : 
+
+046 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+047 : 0.•Exit
+
+048 : 1.•Generate•a•student•ID
+
+049 : 2.•Capture•marks•for•students
+
+050 : 3.•List•student•IDs•and•average•mark
+
+051 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+052 : You•entered•a•given•name•of•Clair•and•a•surname•of•Durant
+
+053 : Your•studID•is•CD06aa
+
+054 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+055 : 0.•Exit
+
+056 : 1.•Generate•a•student•ID
+
+057 : 2.•Capture•marks•for•students
+
+058 : 3.•List•student•IDs•and•average•mark
+
+059 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+060 : Please•enter•mark•1•for•student•CD06aa
+
+061 : Please•enter•mark•2•for•student•CD06aa
+
+062 : Please•enter•mark•3•for•student•CD06aa
+
+063 : Student•CD06aa•has•a•lowest•mark•of•35
+
+064 : A•highest•mark•of•78
+
+065 : Student•***CD06aa***•has•an•average•of•52.67
+
+066 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+067 : 
+
+068 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+069 : 0.•Exit
+
+070 : 1.•Generate•a•student•ID
+
+071 : 2.•Capture•marks•for•students
+
+072 : 3.•List•student•IDs•and•average•mark
+
+073 : |•Student•ID•••1•is•ML05lc•|•Average•is•52.33•|
+
+074 : |•Student•ID•••2•is•PA05le•|•Average•is•48.33•|
+
+075 : |•Student•ID•••3•is•CD06aa•|•Average•is•52.67•|
+
+076 : 
+
+077 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+078 : 0.•Exit
+
+079 : 1.•Generate•a•student•ID
+
+080 : 2.•Capture•marks•for•students
+
+081 : 3.•List•student•IDs•and•average•mark
+
+082 : Goodbye
+
+</pre></p></td><td><p><br>&#10003</p></td><td><p><br>Exact match: 1.43%</p></td></tr></table><hr><h4>Test 312</h4><p>Input data:<pre>1
+
+Pam Gros
+
+2
+
+PG04ao
+
+34
+
+21
+
+89
+
+n
+
+1
+
+Stacia Hubbard
+
+2
+
+SH07cb
+
+21
+
+54
+
+87
+
+n
+
+1
+
+Lyndsay Brooks
+
+2
+
+LB06do
+
+25
+
+36
+
+12
+
+n
+
+1
+
+Edgar Savidge
+
+2
+
+ES07gi
+
+45
+
+89
+
+12
+
+n
+
+3
+
+0
+
+
+</pre></p><p>Note that spaces have been replaced with •</p><table><tr><td><p>Program output: <br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : You•entered•a•given•name•of•Pam•and•a•surname•of•Gros
+
+009 : Your•studID•is•PG04ao
+
+010 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+011 : 0.•Exit
+
+012 : 1.•Generate•a•student•ID
+
+013 : 2.•Capture•marks•for•students
+
+014 : 3.•List•student•IDs•and•average•mark
+
+015 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+016 : Please•enter•mark•1•for•student•PG04ao
+
+017 : Please•enter•mark•2•for•student•PG04ao
+
+018 : Please•enter•mark•3•for•student•PG04ao
+
+019 : Student•PG04ao•has•a•lowest•mark•of•21
+
+020 : A•highest•mark•of•89
+
+021 : Student•***PG04ao***•has•an•average•of•48.00
+
+022 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+023 : 
+
+024 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+025 : 0.•Exit
+
+026 : 1.•Generate•a•student•ID
+
+027 : 2.•Capture•marks•for•students
+
+028 : 3.•List•student•IDs•and•average•mark
+
+029 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+030 : You•entered•a•given•name•of•Stacia•and•a•surname•of•Hubbard
+
+031 : Your•studID•is•SH07cb
+
+032 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+033 : 0.•Exit
+
+034 : 1.•Generate•a•student•ID
+
+035 : 2.•Capture•marks•for•students
+
+036 : 3.•List•student•IDs•and•average•mark
+
+037 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+038 : Please•enter•mark•1•for•student•SH07cb
+
+039 : Please•enter•mark•2•for•student•SH07cb
+
+040 : Please•enter•mark•3•for•student•SH07cb
+
+041 : Student•SH07cb•has•a•lowest•mark•of•21
+
+042 : A•highest•mark•of•87
+
+043 : Student•***SH07cb***•has•an•average•of•54.00
+
+044 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+045 : 
+
+046 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+047 : 0.•Exit
+
+048 : 1.•Generate•a•student•ID
+
+049 : 2.•Capture•marks•for•students
+
+050 : 3.•List•student•IDs•and•average•mark
+
+051 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+052 : You•entered•a•given•name•of•Lyndsay•and•a•surname•of•Brooks
+
+053 : Your•studID•is•LB06do
+
+054 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+055 : 0.•Exit
+
+056 : 1.•Generate•a•student•ID
+
+057 : 2.•Capture•marks•for•students
+
+058 : 3.•List•student•IDs•and•average•mark
+
+059 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+060 : Please•enter•mark•1•for•student•LB06do
+
+061 : Please•enter•mark•2•for•student•LB06do
+
+062 : Please•enter•mark•3•for•student•LB06do
+
+063 : Student•LB06do•has•a•lowest•mark•of•12
+
+064 : A•highest•mark•of•36
+
+065 : Student•***LB06do***•has•an•average•of•24.33
+
+066 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+067 : 
+
+068 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+069 : 0.•Exit
+
+070 : 1.•Generate•a•student•ID
+
+071 : 2.•Capture•marks•for•students
+
+072 : 3.•List•student•IDs•and•average•mark
+
+073 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+074 : You•entered•a•given•name•of•Edgar•and•a•surname•of•Savidge
+
+075 : Your•studID•is•ES07gi
+
+076 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+077 : 0.•Exit
+
+078 : 1.•Generate•a•student•ID
+
+079 : 2.•Capture•marks•for•students
+
+080 : 3.•List•student•IDs•and•average•mark
+
+081 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+082 : Please•enter•mark•1•for•student•ES07gi
+
+083 : Please•enter•mark•2•for•student•ES07gi
+
+084 : Please•enter•mark•3•for•student•ES07gi
+
+085 : Student•ES07gi•has•a•lowest•mark•of•12
+
+086 : A•highest•mark•of•89
+
+087 : Student•***ES07gi***•has•an•average•of•48.67
+
+088 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+089 : 
+
+090 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+091 : 0.•Exit
+
+092 : 1.•Generate•a•student•ID
+
+093 : 2.•Capture•marks•for•students
+
+094 : 3.•List•student•IDs•and•average•mark
+
+095 : |•Student•ID•••1•is•PG04ao•|•Average•is•48.00•|
+
+096 : |•Student•ID•••2•is•SH07cb•|•Average•is•54.00•|
+
+097 : |•Student•ID•••3•is•LB06do•|•Average•is•24.33•|
+
+098 : |•Student•ID•••4•is•ES07gi•|•Average•is•48.67•|
+
+099 : 
+
+100 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+101 : 0.•Exit
+
+102 : 1.•Generate•a•student•ID
+
+103 : 2.•Capture•marks•for•students
+
+104 : 3.•List•student•IDs•and•average•mark
+
+105 : Goodbye
+
+</pre></p></td><td><p>Expected output:<br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : You•entered•a•given•name•of•Pam•and•a•surname•of•Gros
+
+009 : Your•studID•is•PG04ao
+
+010 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+011 : 0.•Exit
+
+012 : 1.•Generate•a•student•ID
+
+013 : 2.•Capture•marks•for•students
+
+014 : 3.•List•student•IDs•and•average•mark
+
+015 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+016 : Please•enter•mark•1•for•student•PG04ao
+
+017 : Please•enter•mark•2•for•student•PG04ao
+
+018 : Please•enter•mark•3•for•student•PG04ao
+
+019 : Student•PG04ao•has•a•lowest•mark•of•21
+
+020 : A•highest•mark•of•89
+
+021 : Student•***PG04ao***•has•an•average•of•48.00
+
+022 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+023 : 
+
+024 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+025 : 0.•Exit
+
+026 : 1.•Generate•a•student•ID
+
+027 : 2.•Capture•marks•for•students
+
+028 : 3.•List•student•IDs•and•average•mark
+
+029 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+030 : You•entered•a•given•name•of•Stacia•and•a•surname•of•Hubbard
+
+031 : Your•studID•is•SH07cb
+
+032 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+033 : 0.•Exit
+
+034 : 1.•Generate•a•student•ID
+
+035 : 2.•Capture•marks•for•students
+
+036 : 3.•List•student•IDs•and•average•mark
+
+037 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+038 : Please•enter•mark•1•for•student•SH07cb
+
+039 : Please•enter•mark•2•for•student•SH07cb
+
+040 : Please•enter•mark•3•for•student•SH07cb
+
+041 : Student•SH07cb•has•a•lowest•mark•of•21
+
+042 : A•highest•mark•of•87
+
+043 : Student•***SH07cb***•has•an•average•of•54.00
+
+044 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+045 : 
+
+046 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+047 : 0.•Exit
+
+048 : 1.•Generate•a•student•ID
+
+049 : 2.•Capture•marks•for•students
+
+050 : 3.•List•student•IDs•and•average•mark
+
+051 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+052 : You•entered•a•given•name•of•Lyndsay•and•a•surname•of•Brooks
+
+053 : Your•studID•is•LB06do
+
+054 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+055 : 0.•Exit
+
+056 : 1.•Generate•a•student•ID
+
+057 : 2.•Capture•marks•for•students
+
+058 : 3.•List•student•IDs•and•average•mark
+
+059 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+060 : Please•enter•mark•1•for•student•LB06do
+
+061 : Please•enter•mark•2•for•student•LB06do
+
+062 : Please•enter•mark•3•for•student•LB06do
+
+063 : Student•LB06do•has•a•lowest•mark•of•12
+
+064 : A•highest•mark•of•36
+
+065 : Student•***LB06do***•has•an•average•of•24.33
+
+066 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+067 : 
+
+068 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+069 : 0.•Exit
+
+070 : 1.•Generate•a•student•ID
+
+071 : 2.•Capture•marks•for•students
+
+072 : 3.•List•student•IDs•and•average•mark
+
+073 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+074 : You•entered•a•given•name•of•Edgar•and•a•surname•of•Savidge
+
+075 : Your•studID•is•ES07gi
+
+076 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+077 : 0.•Exit
+
+078 : 1.•Generate•a•student•ID
+
+079 : 2.•Capture•marks•for•students
+
+080 : 3.•List•student•IDs•and•average•mark
+
+081 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+082 : Please•enter•mark•1•for•student•ES07gi
+
+083 : Please•enter•mark•2•for•student•ES07gi
+
+084 : Please•enter•mark•3•for•student•ES07gi
+
+085 : Student•ES07gi•has•a•lowest•mark•of•12
+
+086 : A•highest•mark•of•89
+
+087 : Student•***ES07gi***•has•an•average•of•48.67
+
+088 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+089 : 
+
+090 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+091 : 0.•Exit
+
+092 : 1.•Generate•a•student•ID
+
+093 : 2.•Capture•marks•for•students
+
+094 : 3.•List•student•IDs•and•average•mark
+
+095 : |•Student•ID•••1•is•PG04ao•|•Average•is•48.00•|
+
+096 : |•Student•ID•••2•is•SH07cb•|•Average•is•54.00•|
+
+097 : |•Student•ID•••3•is•LB06do•|•Average•is•24.33•|
+
+098 : |•Student•ID•••4•is•ES07gi•|•Average•is•48.67•|
+
+099 : 
+
+100 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+101 : 0.•Exit
+
+102 : 1.•Generate•a•student•ID
+
+103 : 2.•Capture•marks•for•students
+
+104 : 3.•List•student•IDs•and•average•mark
+
+105 : Goodbye
+
+</pre></p></td><td><p><br>&#10003</p></td><td><p><br>Exact match: 1.43%</p></td></tr></table><hr><h4>Test 313</h4><p>Input data:<pre>1
+
+Dominic Colt
+
+2
+
+DC04il
+
+23
+
+78
+
+45
+
+n
+
+1
+
+Norah Leclair
+
+2
+
+NL07rl
+
+78
+
+24
+
+76
+
+n
+
+1
+
+Alexandrina Rye
+
+2
+
+AR03ny
+
+78
+
+23
+
+5
+
+n
+
+1
+
+Marjory Swanson
+
+2
+
+MS07jn
+
+87
+
+45
+
+24
+
+n
+
+1
+
+Nicole Savege
+
+2
+
+NS06oe
+
+87
+
+9
+
+46
+
+n
+
+3
+
+0
+
+
+</pre></p><p>Note that spaces have been replaced with •</p><table><tr><td><p>Program output: <br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : You•entered•a•given•name•of•Dominic•and•a•surname•of•Colt
+
+009 : Your•studID•is•DC04il
+
+010 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+011 : 0.•Exit
+
+012 : 1.•Generate•a•student•ID
+
+013 : 2.•Capture•marks•for•students
+
+014 : 3.•List•student•IDs•and•average•mark
+
+015 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+016 : Please•enter•mark•1•for•student•DC04il
+
+017 : Please•enter•mark•2•for•student•DC04il
+
+018 : Please•enter•mark•3•for•student•DC04il
+
+019 : Student•DC04il•has•a•lowest•mark•of•23
+
+020 : A•highest•mark•of•78
+
+021 : Student•***DC04il***•has•an•average•of•48.67
+
+022 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+023 : 
+
+024 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+025 : 0.•Exit
+
+026 : 1.•Generate•a•student•ID
+
+027 : 2.•Capture•marks•for•students
+
+028 : 3.•List•student•IDs•and•average•mark
+
+029 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+030 : You•entered•a•given•name•of•Norah•and•a•surname•of•Leclair
+
+031 : Your•studID•is•NL07rl
+
+032 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+033 : 0.•Exit
+
+034 : 1.•Generate•a•student•ID
+
+035 : 2.•Capture•marks•for•students
+
+036 : 3.•List•student•IDs•and•average•mark
+
+037 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+038 : Please•enter•mark•1•for•student•NL07rl
+
+039 : Please•enter•mark•2•for•student•NL07rl
+
+040 : Please•enter•mark•3•for•student•NL07rl
+
+041 : Student•NL07rl•has•a•lowest•mark•of•24
+
+042 : A•highest•mark•of•78
+
+043 : Student•***NL07rl***•has•an•average•of•59.33
+
+044 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+045 : 
+
+046 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+047 : 0.•Exit
+
+048 : 1.•Generate•a•student•ID
+
+049 : 2.•Capture•marks•for•students
+
+050 : 3.•List•student•IDs•and•average•mark
+
+051 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+052 : You•entered•a•given•name•of•Alexandrina•and•a•surname•of•Rye
+
+053 : Your•studID•is•AR03ny
+
+054 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+055 : 0.•Exit
+
+056 : 1.•Generate•a•student•ID
+
+057 : 2.•Capture•marks•for•students
+
+058 : 3.•List•student•IDs•and•average•mark
+
+059 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+060 : Please•enter•mark•1•for•student•AR03ny
+
+061 : Please•enter•mark•2•for•student•AR03ny
+
+062 : Please•enter•mark•3•for•student•AR03ny
+
+063 : Student•AR03ny•has•a•lowest•mark•of•5
+
+064 : A•highest•mark•of•78
+
+065 : Student•***AR03ny***•has•an•average•of•35.33
+
+066 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+067 : 
+
+068 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+069 : 0.•Exit
+
+070 : 1.•Generate•a•student•ID
+
+071 : 2.•Capture•marks•for•students
+
+072 : 3.•List•student•IDs•and•average•mark
+
+073 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+074 : You•entered•a•given•name•of•Marjory•and•a•surname•of•Swanson
+
+075 : Your•studID•is•MS07jn
+
+076 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+077 : 0.•Exit
+
+078 : 1.•Generate•a•student•ID
+
+079 : 2.•Capture•marks•for•students
+
+080 : 3.•List•student•IDs•and•average•mark
+
+081 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+082 : Please•enter•mark•1•for•student•MS07jn
+
+083 : Please•enter•mark•2•for•student•MS07jn
+
+084 : Please•enter•mark•3•for•student•MS07jn
+
+085 : Student•MS07jn•has•a•lowest•mark•of•24
+
+086 : A•highest•mark•of•87
+
+087 : Student•***MS07jn***•has•an•average•of•52.00
+
+088 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+089 : 
+
+090 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+091 : 0.•Exit
+
+092 : 1.•Generate•a•student•ID
+
+093 : 2.•Capture•marks•for•students
+
+094 : 3.•List•student•IDs•and•average•mark
+
+095 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+096 : You•entered•a•given•name•of•Nicole•and•a•surname•of•Savege
+
+097 : Your•studID•is•NS06oe
+
+098 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+099 : 0.•Exit
+
+100 : 1.•Generate•a•student•ID
+
+101 : 2.•Capture•marks•for•students
+
+102 : 3.•List•student•IDs•and•average•mark
+
+103 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+104 : Please•enter•mark•1•for•student•NS06oe
+
+105 : Please•enter•mark•2•for•student•NS06oe
+
+106 : Please•enter•mark•3•for•student•NS06oe
+
+107 : Student•NS06oe•has•a•lowest•mark•of•9
+
+108 : A•highest•mark•of•87
+
+109 : Student•***NS06oe***•has•an•average•of•47.33
+
+110 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+111 : 
+
+112 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+113 : 0.•Exit
+
+114 : 1.•Generate•a•student•ID
+
+115 : 2.•Capture•marks•for•students
+
+116 : 3.•List•student•IDs•and•average•mark
+
+117 : |•Student•ID•••1•is•DC04il•|•Average•is•48.67•|
+
+118 : |•Student•ID•••2•is•NL07rl•|•Average•is•59.33•|
+
+119 : |•Student•ID•••3•is•AR03ny•|•Average•is•35.33•|
+
+120 : |•Student•ID•••4•is•MS07jn•|•Average•is•52.00•|
+
+121 : |•Student•ID•••5•is•NS06oe•|•Average•is•47.33•|
+
+122 : 
+
+123 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+124 : 0.•Exit
+
+125 : 1.•Generate•a•student•ID
+
+126 : 2.•Capture•marks•for•students
+
+127 : 3.•List•student•IDs•and•average•mark
+
+128 : Goodbye
+
+</pre></p></td><td><p>Expected output:<br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : You•entered•a•given•name•of•Dominic•and•a•surname•of•Colt
+
+009 : Your•studID•is•DC04il
+
+010 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+011 : 0.•Exit
+
+012 : 1.•Generate•a•student•ID
+
+013 : 2.•Capture•marks•for•students
+
+014 : 3.•List•student•IDs•and•average•mark
+
+015 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+016 : Please•enter•mark•1•for•student•DC04il
+
+017 : Please•enter•mark•2•for•student•DC04il
+
+018 : Please•enter•mark•3•for•student•DC04il
+
+019 : Student•DC04il•has•a•lowest•mark•of•23
+
+020 : A•highest•mark•of•78
+
+021 : Student•***DC04il***•has•an•average•of•48.67
+
+022 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+023 : 
+
+024 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+025 : 0.•Exit
+
+026 : 1.•Generate•a•student•ID
+
+027 : 2.•Capture•marks•for•students
+
+028 : 3.•List•student•IDs•and•average•mark
+
+029 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+030 : You•entered•a•given•name•of•Norah•and•a•surname•of•Leclair
+
+031 : Your•studID•is•NL07rl
+
+032 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+033 : 0.•Exit
+
+034 : 1.•Generate•a•student•ID
+
+035 : 2.•Capture•marks•for•students
+
+036 : 3.•List•student•IDs•and•average•mark
+
+037 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+038 : Please•enter•mark•1•for•student•NL07rl
+
+039 : Please•enter•mark•2•for•student•NL07rl
+
+040 : Please•enter•mark•3•for•student•NL07rl
+
+041 : Student•NL07rl•has•a•lowest•mark•of•24
+
+042 : A•highest•mark•of•78
+
+043 : Student•***NL07rl***•has•an•average•of•59.33
+
+044 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+045 : 
+
+046 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+047 : 0.•Exit
+
+048 : 1.•Generate•a•student•ID
+
+049 : 2.•Capture•marks•for•students
+
+050 : 3.•List•student•IDs•and•average•mark
+
+051 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+052 : You•entered•a•given•name•of•Alexandrina•and•a•surname•of•Rye
+
+053 : Your•studID•is•AR03ny
+
+054 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+055 : 0.•Exit
+
+056 : 1.•Generate•a•student•ID
+
+057 : 2.•Capture•marks•for•students
+
+058 : 3.•List•student•IDs•and•average•mark
+
+059 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+060 : Please•enter•mark•1•for•student•AR03ny
+
+061 : Please•enter•mark•2•for•student•AR03ny
+
+062 : Please•enter•mark•3•for•student•AR03ny
+
+063 : Student•AR03ny•has•a•lowest•mark•of•5
+
+064 : A•highest•mark•of•78
+
+065 : Student•***AR03ny***•has•an•average•of•35.33
+
+066 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+067 : 
+
+068 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+069 : 0.•Exit
+
+070 : 1.•Generate•a•student•ID
+
+071 : 2.•Capture•marks•for•students
+
+072 : 3.•List•student•IDs•and•average•mark
+
+073 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+074 : You•entered•a•given•name•of•Marjory•and•a•surname•of•Swanson
+
+075 : Your•studID•is•MS07jn
+
+076 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+077 : 0.•Exit
+
+078 : 1.•Generate•a•student•ID
+
+079 : 2.•Capture•marks•for•students
+
+080 : 3.•List•student•IDs•and•average•mark
+
+081 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+082 : Please•enter•mark•1•for•student•MS07jn
+
+083 : Please•enter•mark•2•for•student•MS07jn
+
+084 : Please•enter•mark•3•for•student•MS07jn
+
+085 : Student•MS07jn•has•a•lowest•mark•of•24
+
+086 : A•highest•mark•of•87
+
+087 : Student•***MS07jn***•has•an•average•of•52.00
+
+088 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+089 : 
+
+090 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+091 : 0.•Exit
+
+092 : 1.•Generate•a•student•ID
+
+093 : 2.•Capture•marks•for•students
+
+094 : 3.•List•student•IDs•and•average•mark
+
+095 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+096 : You•entered•a•given•name•of•Nicole•and•a•surname•of•Savege
+
+097 : Your•studID•is•NS06oe
+
+098 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+099 : 0.•Exit
+
+100 : 1.•Generate•a•student•ID
+
+101 : 2.•Capture•marks•for•students
+
+102 : 3.•List•student•IDs•and•average•mark
+
+103 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+104 : Please•enter•mark•1•for•student•NS06oe
+
+105 : Please•enter•mark•2•for•student•NS06oe
+
+106 : Please•enter•mark•3•for•student•NS06oe
+
+107 : Student•NS06oe•has•a•lowest•mark•of•9
+
+108 : A•highest•mark•of•87
+
+109 : Student•***NS06oe***•has•an•average•of•47.33
+
+110 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+111 : 
+
+112 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+113 : 0.•Exit
+
+114 : 1.•Generate•a•student•ID
+
+115 : 2.•Capture•marks•for•students
+
+116 : 3.•List•student•IDs•and•average•mark
+
+117 : |•Student•ID•••1•is•DC04il•|•Average•is•48.67•|
+
+118 : |•Student•ID•••2•is•NL07rl•|•Average•is•59.33•|
+
+119 : |•Student•ID•••3•is•AR03ny•|•Average•is•35.33•|
+
+120 : |•Student•ID•••4•is•MS07jn•|•Average•is•52.00•|
+
+121 : |•Student•ID•••5•is•NS06oe•|•Average•is•47.33•|
+
+122 : 
+
+123 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+124 : 0.•Exit
+
+125 : 1.•Generate•a•student•ID
+
+126 : 2.•Capture•marks•for•students
+
+127 : 3.•List•student•IDs•and•average•mark
+
+128 : Goodbye
+
+</pre></p></td><td><p><br>&#10003</p></td><td><p><br>Exact match: 1.43%</p></td></tr></table><hr><h4>Test 314</h4><p>Input data:<pre>1
+
+Leroy Sexton
+
+2
+
+LS06rt
+
+34
+
+78
+
+9
+
+n
+
+3
+
+1
+
+Justine Spearing
+
+2
+
+JS08tr
+
+56
+
+68
+
+23
+
+n
+
+3
+
+1
+
+Paulina May
+
+2
+
+PM03la
+
+56
+
+89
+
+34
+
+n
+
+3
+
+1
+
+Lexi Simpson
+
+2
+
+LS07xp
+
+34
+
+2
+
+67
+
+n
+
+3
+
+1
+
+Marceau Baines
+
+2
+
+MB06cn
+
+54
+
+67
+
+56
+
+n
+
+3
+
+0
+
+
+</pre></p><p>Note that spaces have been replaced with •</p><table><tr><td><p>Program output: <br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : You•entered•a•given•name•of•Leroy•and•a•surname•of•Sexton
+
+009 : Your•studID•is•LS06rt
+
+010 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+011 : 0.•Exit
+
+012 : 1.•Generate•a•student•ID
+
+013 : 2.•Capture•marks•for•students
+
+014 : 3.•List•student•IDs•and•average•mark
+
+015 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+016 : Please•enter•mark•1•for•student•LS06rt
+
+017 : Please•enter•mark•2•for•student•LS06rt
+
+018 : Please•enter•mark•3•for•student•LS06rt
+
+019 : Student•LS06rt•has•a•lowest•mark•of•9
+
+020 : A•highest•mark•of•78
+
+021 : Student•***LS06rt***•has•an•average•of•40.33
+
+022 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+023 : 
+
+024 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+025 : 0.•Exit
+
+026 : 1.•Generate•a•student•ID
+
+027 : 2.•Capture•marks•for•students
+
+028 : 3.•List•student•IDs•and•average•mark
+
+029 : |•Student•ID•••1•is•LS06rt•|•Average•is•40.33•|
+
+030 : 
+
+031 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+032 : 0.•Exit
+
+033 : 1.•Generate•a•student•ID
+
+034 : 2.•Capture•marks•for•students
+
+035 : 3.•List•student•IDs•and•average•mark
+
+036 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+037 : You•entered•a•given•name•of•Justine•and•a•surname•of•Spearing
+
+038 : Your•studID•is•JS08tr
+
+039 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+040 : 0.•Exit
+
+041 : 1.•Generate•a•student•ID
+
+042 : 2.•Capture•marks•for•students
+
+043 : 3.•List•student•IDs•and•average•mark
+
+044 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+045 : Please•enter•mark•1•for•student•JS08tr
+
+046 : Please•enter•mark•2•for•student•JS08tr
+
+047 : Please•enter•mark•3•for•student•JS08tr
+
+048 : Student•JS08tr•has•a•lowest•mark•of•23
+
+049 : A•highest•mark•of•68
+
+050 : Student•***JS08tr***•has•an•average•of•49.00
+
+051 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+052 : 
+
+053 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+054 : 0.•Exit
+
+055 : 1.•Generate•a•student•ID
+
+056 : 2.•Capture•marks•for•students
+
+057 : 3.•List•student•IDs•and•average•mark
+
+058 : |•Student•ID•••1•is•LS06rt•|•Average•is•40.33•|
+
+059 : |•Student•ID•••2•is•JS08tr•|•Average•is•49.00•|
+
+060 : 
+
+061 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+062 : 0.•Exit
+
+063 : 1.•Generate•a•student•ID
+
+064 : 2.•Capture•marks•for•students
+
+065 : 3.•List•student•IDs•and•average•mark
+
+066 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+067 : You•entered•a•given•name•of•Paulina•and•a•surname•of•May
+
+068 : Your•studID•is•PM03la
+
+069 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+070 : 0.•Exit
+
+071 : 1.•Generate•a•student•ID
+
+072 : 2.•Capture•marks•for•students
+
+073 : 3.•List•student•IDs•and•average•mark
+
+074 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+075 : Please•enter•mark•1•for•student•PM03la
+
+076 : Please•enter•mark•2•for•student•PM03la
+
+077 : Please•enter•mark•3•for•student•PM03la
+
+078 : Student•PM03la•has•a•lowest•mark•of•34
+
+079 : A•highest•mark•of•89
+
+080 : Student•***PM03la***•has•an•average•of•59.67
+
+081 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+082 : 
+
+083 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+084 : 0.•Exit
+
+085 : 1.•Generate•a•student•ID
+
+086 : 2.•Capture•marks•for•students
+
+087 : 3.•List•student•IDs•and•average•mark
+
+088 : |•Student•ID•••1•is•LS06rt•|•Average•is•40.33•|
+
+089 : |•Student•ID•••2•is•JS08tr•|•Average•is•49.00•|
+
+090 : |•Student•ID•••3•is•PM03la•|•Average•is•59.67•|
+
+091 : 
+
+092 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+093 : 0.•Exit
+
+094 : 1.•Generate•a•student•ID
+
+095 : 2.•Capture•marks•for•students
+
+096 : 3.•List•student•IDs•and•average•mark
+
+097 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+098 : You•entered•a•given•name•of•Lexi•and•a•surname•of•Simpson
+
+099 : Your•studID•is•LS07xp
+
+100 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+101 : 0.•Exit
+
+102 : 1.•Generate•a•student•ID
+
+103 : 2.•Capture•marks•for•students
+
+104 : 3.•List•student•IDs•and•average•mark
+
+105 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+106 : Please•enter•mark•1•for•student•LS07xp
+
+107 : Please•enter•mark•2•for•student•LS07xp
+
+108 : Please•enter•mark•3•for•student•LS07xp
+
+109 : Student•LS07xp•has•a•lowest•mark•of•2
+
+110 : A•highest•mark•of•67
+
+111 : Student•***LS07xp***•has•an•average•of•34.33
+
+112 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+113 : 
+
+114 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+115 : 0.•Exit
+
+116 : 1.•Generate•a•student•ID
+
+117 : 2.•Capture•marks•for•students
+
+118 : 3.•List•student•IDs•and•average•mark
+
+119 : |•Student•ID•••1•is•LS06rt•|•Average•is•40.33•|
+
+120 : |•Student•ID•••2•is•JS08tr•|•Average•is•49.00•|
+
+121 : |•Student•ID•••3•is•PM03la•|•Average•is•59.67•|
+
+122 : |•Student•ID•••4•is•LS07xp•|•Average•is•34.33•|
+
+123 : 
+
+124 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+125 : 0.•Exit
+
+126 : 1.•Generate•a•student•ID
+
+127 : 2.•Capture•marks•for•students
+
+128 : 3.•List•student•IDs•and•average•mark
+
+129 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+130 : You•entered•a•given•name•of•Marceau•and•a•surname•of•Baines
+
+131 : Your•studID•is•MB06cn
+
+132 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+133 : 0.•Exit
+
+134 : 1.•Generate•a•student•ID
+
+135 : 2.•Capture•marks•for•students
+
+136 : 3.•List•student•IDs•and•average•mark
+
+137 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+138 : Please•enter•mark•1•for•student•MB06cn
+
+139 : Please•enter•mark•2•for•student•MB06cn
+
+140 : Please•enter•mark•3•for•student•MB06cn
+
+141 : Student•MB06cn•has•a•lowest•mark•of•54
+
+142 : A•highest•mark•of•67
+
+143 : Student•***MB06cn***•has•an•average•of•59.00
+
+144 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+145 : 
+
+146 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+147 : 0.•Exit
+
+148 : 1.•Generate•a•student•ID
+
+149 : 2.•Capture•marks•for•students
+
+150 : 3.•List•student•IDs•and•average•mark
+
+151 : |•Student•ID•••1•is•LS06rt•|•Average•is•40.33•|
+
+152 : |•Student•ID•••2•is•JS08tr•|•Average•is•49.00•|
+
+153 : |•Student•ID•••3•is•PM03la•|•Average•is•59.67•|
+
+154 : |•Student•ID•••4•is•LS07xp•|•Average•is•34.33•|
+
+155 : |•Student•ID•••5•is•MB06cn•|•Average•is•59.00•|
+
+156 : 
+
+157 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+158 : 0.•Exit
+
+159 : 1.•Generate•a•student•ID
+
+160 : 2.•Capture•marks•for•students
+
+161 : 3.•List•student•IDs•and•average•mark
+
+162 : Goodbye
+
+</pre></p></td><td><p>Expected output:<br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : You•entered•a•given•name•of•Leroy•and•a•surname•of•Sexton
+
+009 : Your•studID•is•LS06rt
+
+010 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+011 : 0.•Exit
+
+012 : 1.•Generate•a•student•ID
+
+013 : 2.•Capture•marks•for•students
+
+014 : 3.•List•student•IDs•and•average•mark
+
+015 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+016 : Please•enter•mark•1•for•student•LS06rt
+
+017 : Please•enter•mark•2•for•student•LS06rt
+
+018 : Please•enter•mark•3•for•student•LS06rt
+
+019 : Student•LS06rt•has•a•lowest•mark•of•9
+
+020 : A•highest•mark•of•78
+
+021 : Student•***LS06rt***•has•an•average•of•40.33
+
+022 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+023 : 
+
+024 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+025 : 0.•Exit
+
+026 : 1.•Generate•a•student•ID
+
+027 : 2.•Capture•marks•for•students
+
+028 : 3.•List•student•IDs•and•average•mark
+
+029 : |•Student•ID•••1•is•LS06rt•|•Average•is•40.33•|
+
+030 : 
+
+031 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+032 : 0.•Exit
+
+033 : 1.•Generate•a•student•ID
+
+034 : 2.•Capture•marks•for•students
+
+035 : 3.•List•student•IDs•and•average•mark
+
+036 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+037 : You•entered•a•given•name•of•Justine•and•a•surname•of•Spearing
+
+038 : Your•studID•is•JS08tr
+
+039 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+040 : 0.•Exit
+
+041 : 1.•Generate•a•student•ID
+
+042 : 2.•Capture•marks•for•students
+
+043 : 3.•List•student•IDs•and•average•mark
+
+044 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+045 : Please•enter•mark•1•for•student•JS08tr
+
+046 : Please•enter•mark•2•for•student•JS08tr
+
+047 : Please•enter•mark•3•for•student•JS08tr
+
+048 : Student•JS08tr•has•a•lowest•mark•of•23
+
+049 : A•highest•mark•of•68
+
+050 : Student•***JS08tr***•has•an•average•of•49.00
+
+051 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+052 : 
+
+053 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+054 : 0.•Exit
+
+055 : 1.•Generate•a•student•ID
+
+056 : 2.•Capture•marks•for•students
+
+057 : 3.•List•student•IDs•and•average•mark
+
+058 : |•Student•ID•••1•is•LS06rt•|•Average•is•40.33•|
+
+059 : |•Student•ID•••2•is•JS08tr•|•Average•is•49.00•|
+
+060 : 
+
+061 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+062 : 0.•Exit
+
+063 : 1.•Generate•a•student•ID
+
+064 : 2.•Capture•marks•for•students
+
+065 : 3.•List•student•IDs•and•average•mark
+
+066 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+067 : You•entered•a•given•name•of•Paulina•and•a•surname•of•May
+
+068 : Your•studID•is•PM03la
+
+069 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+070 : 0.•Exit
+
+071 : 1.•Generate•a•student•ID
+
+072 : 2.•Capture•marks•for•students
+
+073 : 3.•List•student•IDs•and•average•mark
+
+074 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+075 : Please•enter•mark•1•for•student•PM03la
+
+076 : Please•enter•mark•2•for•student•PM03la
+
+077 : Please•enter•mark•3•for•student•PM03la
+
+078 : Student•PM03la•has•a•lowest•mark•of•34
+
+079 : A•highest•mark•of•89
+
+080 : Student•***PM03la***•has•an•average•of•59.67
+
+081 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+082 : 
+
+083 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+084 : 0.•Exit
+
+085 : 1.•Generate•a•student•ID
+
+086 : 2.•Capture•marks•for•students
+
+087 : 3.•List•student•IDs•and•average•mark
+
+088 : |•Student•ID•••1•is•LS06rt•|•Average•is•40.33•|
+
+089 : |•Student•ID•••2•is•JS08tr•|•Average•is•49.00•|
+
+090 : |•Student•ID•••3•is•PM03la•|•Average•is•59.67•|
+
+091 : 
+
+092 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+093 : 0.•Exit
+
+094 : 1.•Generate•a•student•ID
+
+095 : 2.•Capture•marks•for•students
+
+096 : 3.•List•student•IDs•and•average•mark
+
+097 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+098 : You•entered•a•given•name•of•Lexi•and•a•surname•of•Simpson
+
+099 : Your•studID•is•LS07xp
+
+100 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+101 : 0.•Exit
+
+102 : 1.•Generate•a•student•ID
+
+103 : 2.•Capture•marks•for•students
+
+104 : 3.•List•student•IDs•and•average•mark
+
+105 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+106 : Please•enter•mark•1•for•student•LS07xp
+
+107 : Please•enter•mark•2•for•student•LS07xp
+
+108 : Please•enter•mark•3•for•student•LS07xp
+
+109 : Student•LS07xp•has•a•lowest•mark•of•2
+
+110 : A•highest•mark•of•67
+
+111 : Student•***LS07xp***•has•an•average•of•34.33
+
+112 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+113 : 
+
+114 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+115 : 0.•Exit
+
+116 : 1.•Generate•a•student•ID
+
+117 : 2.•Capture•marks•for•students
+
+118 : 3.•List•student•IDs•and•average•mark
+
+119 : |•Student•ID•••1•is•LS06rt•|•Average•is•40.33•|
+
+120 : |•Student•ID•••2•is•JS08tr•|•Average•is•49.00•|
+
+121 : |•Student•ID•••3•is•PM03la•|•Average•is•59.67•|
+
+122 : |•Student•ID•••4•is•LS07xp•|•Average•is•34.33•|
+
+123 : 
+
+124 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+125 : 0.•Exit
+
+126 : 1.•Generate•a•student•ID
+
+127 : 2.•Capture•marks•for•students
+
+128 : 3.•List•student•IDs•and•average•mark
+
+129 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+130 : You•entered•a•given•name•of•Marceau•and•a•surname•of•Baines
+
+131 : Your•studID•is•MB06cn
+
+132 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+133 : 0.•Exit
+
+134 : 1.•Generate•a•student•ID
+
+135 : 2.•Capture•marks•for•students
+
+136 : 3.•List•student•IDs•and•average•mark
+
+137 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+138 : Please•enter•mark•1•for•student•MB06cn
+
+139 : Please•enter•mark•2•for•student•MB06cn
+
+140 : Please•enter•mark•3•for•student•MB06cn
+
+141 : Student•MB06cn•has•a•lowest•mark•of•54
+
+142 : A•highest•mark•of•67
+
+143 : Student•***MB06cn***•has•an•average•of•59.00
+
+144 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+145 : 
+
+146 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+147 : 0.•Exit
+
+148 : 1.•Generate•a•student•ID
+
+149 : 2.•Capture•marks•for•students
+
+150 : 3.•List•student•IDs•and•average•mark
+
+151 : |•Student•ID•••1•is•LS06rt•|•Average•is•40.33•|
+
+152 : |•Student•ID•••2•is•JS08tr•|•Average•is•49.00•|
+
+153 : |•Student•ID•••3•is•PM03la•|•Average•is•59.67•|
+
+154 : |•Student•ID•••4•is•LS07xp•|•Average•is•34.33•|
+
+155 : |•Student•ID•••5•is•MB06cn•|•Average•is•59.00•|
+
+156 : 
+
+157 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+158 : 0.•Exit
+
+159 : 1.•Generate•a•student•ID
+
+160 : 2.•Capture•marks•for•students
+
+161 : 3.•List•student•IDs•and•average•mark
+
+162 : Goodbye
+
+</pre></p></td><td><p><br>&#10003</p></td><td><p><br>Exact match: 1.43%</p></td></tr></table><hr><h4>Test 315</h4><p>Input data:<pre>1
+
+Knox Winter
+
+2
+
+KW06ot
+
+045
+
+06
+
+0100
+
+n
+
+3
+
+1
+
+Dakota Patton
+
+2
+
+DP06ot
+
+010
+
+045
+
+09
+
+n
+
+3
+
+0
+
+
+</pre></p><p>Note that spaces have been replaced with •</p><table><tr><td><p>Program output: <br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : You•entered•a•given•name•of•Knox•and•a•surname•of•Winter
+
+009 : Your•studID•is•KW06ot
+
+010 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+011 : 0.•Exit
+
+012 : 1.•Generate•a•student•ID
+
+013 : 2.•Capture•marks•for•students
+
+014 : 3.•List•student•IDs•and•average•mark
+
+015 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+016 : Please•enter•mark•1•for•student•KW06ot
+
+017 : Please•enter•mark•2•for•student•KW06ot
+
+018 : Please•enter•mark•3•for•student•KW06ot
+
+019 : Student•KW06ot•has•a•lowest•mark•of•6
+
+020 : A•highest•mark•of•100
+
+021 : Student•***KW06ot***•has•an•average•of•50.33
+
+022 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+023 : 
+
+024 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+025 : 0.•Exit
+
+026 : 1.•Generate•a•student•ID
+
+027 : 2.•Capture•marks•for•students
+
+028 : 3.•List•student•IDs•and•average•mark
+
+029 : |•Student•ID•••1•is•KW06ot•|•Average•is•50.33•|
+
+030 : 
+
+031 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+032 : 0.•Exit
+
+033 : 1.•Generate•a•student•ID
+
+034 : 2.•Capture•marks•for•students
+
+035 : 3.•List•student•IDs•and•average•mark
+
+036 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+037 : You•entered•a•given•name•of•Dakota•and•a•surname•of•Patton
+
+038 : Your•studID•is•DP06ot
+
+039 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+040 : 0.•Exit
+
+041 : 1.•Generate•a•student•ID
+
+042 : 2.•Capture•marks•for•students
+
+043 : 3.•List•student•IDs•and•average•mark
+
+044 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+045 : Please•enter•mark•1•for•student•DP06ot
+
+046 : Please•enter•mark•2•for•student•DP06ot
+
+047 : Please•enter•mark•3•for•student•DP06ot
+
+048 : Student•DP06ot•has•a•lowest•mark•of•9
+
+049 : A•highest•mark•of•45
+
+050 : Student•***DP06ot***•has•an•average•of•21.33
+
+051 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+052 : 
+
+053 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+054 : 0.•Exit
+
+055 : 1.•Generate•a•student•ID
+
+056 : 2.•Capture•marks•for•students
+
+057 : 3.•List•student•IDs•and•average•mark
+
+058 : |•Student•ID•••1•is•KW06ot•|•Average•is•50.33•|
+
+059 : |•Student•ID•••2•is•DP06ot•|•Average•is•21.33•|
+
+060 : 
+
+061 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+062 : 0.•Exit
+
+063 : 1.•Generate•a•student•ID
+
+064 : 2.•Capture•marks•for•students
+
+065 : 3.•List•student•IDs•and•average•mark
+
+066 : Goodbye
+
+</pre></p></td><td><p>Expected output:<br><pre>001 : 
+
+002 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+003 : 0.•Exit
+
+004 : 1.•Generate•a•student•ID
+
+005 : 2.•Capture•marks•for•students
+
+006 : 3.•List•student•IDs•and•average•mark
+
+007 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+008 : You•entered•a•given•name•of•Knox•and•a•surname•of•Winter
+
+009 : Your•studID•is•KW06ot
+
+010 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+011 : 0.•Exit
+
+012 : 1.•Generate•a•student•ID
+
+013 : 2.•Capture•marks•for•students
+
+014 : 3.•List•student•IDs•and•average•mark
+
+015 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+016 : Please•enter•mark•1•for•student•KW06ot
+
+017 : Please•enter•mark•2•for•student•KW06ot
+
+018 : Please•enter•mark•3•for•student•KW06ot
+
+019 : Student•KW06ot•has•a•lowest•mark•of•6
+
+020 : A•highest•mark•of•100
+
+021 : Student•***KW06ot***•has•an•average•of•50.33
+
+022 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+023 : 
+
+024 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+025 : 0.•Exit
+
+026 : 1.•Generate•a•student•ID
+
+027 : 2.•Capture•marks•for•students
+
+028 : 3.•List•student•IDs•and•average•mark
+
+029 : |•Student•ID•••1•is•KW06ot•|•Average•is•50.33•|
+
+030 : 
+
+031 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+032 : 0.•Exit
+
+033 : 1.•Generate•a•student•ID
+
+034 : 2.•Capture•marks•for•students
+
+035 : 3.•List•student•IDs•and•average•mark
+
+036 : Please•enter•your•given•name•and•surname•(Enter•0•to•return•to•main•menu)
+
+037 : You•entered•a•given•name•of•Dakota•and•a•surname•of•Patton
+
+038 : Your•studID•is•DP06ot
+
+039 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+040 : 0.•Exit
+
+041 : 1.•Generate•a•student•ID
+
+042 : 2.•Capture•marks•for•students
+
+043 : 3.•List•student•IDs•and•average•mark
+
+044 : Please•enter•the•studId•to•capture•their•marks•(Enter•0•to•return•to•main•menu)
+
+045 : Please•enter•mark•1•for•student•DP06ot
+
+046 : Please•enter•mark•2•for•student•DP06ot
+
+047 : Please•enter•mark•3•for•student•DP06ot
+
+048 : Student•DP06ot•has•a•lowest•mark•of•9
+
+049 : A•highest•mark•of•45
+
+050 : Student•***DP06ot***•has•an•average•of•21.33
+
+051 : Would•you•like•to•print•a•bar•chart?•[y/n]
+
+052 : 
+
+053 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+054 : 0.•Exit
+
+055 : 1.•Generate•a•student•ID
+
+056 : 2.•Capture•marks•for•students
+
+057 : 3.•List•student•IDs•and•average•mark
+
+058 : |•Student•ID•••1•is•KW06ot•|•Average•is•50.33•|
+
+059 : |•Student•ID•••2•is•DP06ot•|•Average•is•21.33•|
+
+060 : 
+
+061 : Welcome•to•the•Student•System.•Please•enter•an•option•0•to•3
+
+062 : 0.•Exit
+
+063 : 1.•Generate•a•student•ID
+
+064 : 2.•Capture•marks•for•students
+
+065 : 3.•List•student•IDs•and•average•mark
+
+066 : Goodbye
+
+</pre></p></td><td><p><br>&#10003</p></td><td><p><br>Exact match: 1.43%</p></td></tr></table><hr></div></div></body></html>
